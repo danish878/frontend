@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jgthms/minireset.css/master/minireset.css">
+    <link rel="stylesheet" href="css/debug.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+    <style>
+         :root {
+            font: 1rem/1.175 "BlinkMacSystemFont", -apple-system, "Roboto", sans-serif;
+        }
+        
+        #app {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            font-weight: 900;
+            font-size: 8rem;
+            color: hsl(0, 0%, 100%);
+            background: hsl(240, 100%, 67%);
+            user-select: none;
+        }
+        
+        img {
+            width: 8rem;
+            height: 8rem;
+            vertical-align: calc(-0.12109375em);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="app">
+        <p v-html="incendio(lumos(wizard))"></p>
+    </div>
+
+    <!-- <div id="app">
+        <p v-if="seen">{{ message }}</p>
+        <input type="password" v-model="message" />
+        <button v-on:click="reverseString">
+			Click to Reverse String
+		</button>
+        <button v-on:click="toggleDisplay">
+			Click to {{ (seen ? 'HIDE' : 'SHOW') }}
+			<!-- <span v-if="seen">HIDE</span>
+			<span v-if="!seen">SHOW</span> -->
+    </button>
+
+    <hr>
+
+    <ul>
+        <todo-item v-for="item in groceryList" v-bind:todo="item" v-bind:key="item.id">
+        </todo-item>
+    </ul>
+
+    <hr>
+
+    <hr>
+    </div>
+
+    <div id="loop">
+        <ul>
+            <li v-for="item in items">
+                {{item.name}}
+            </li>
+        </ul>
+    </div> -->
+
+
+    <script>
+        "use strict"
+
+        // emojify returns the corresponding emoji image
+        function emojify(name) {
+            var out = `<img src="emojis/` + name + `.png">`
+            return out
+        }
+
+        // cast returns a spell (function) that decorates the wizard
+        function cast(emoji) {
+            if (!emoji) {
+                emoji = "¯\\_(ツ)_/¯"
+            }
+            return function(wizard) {
+                return emoji + wizard + emoji
+            }
+        }
+
+        var app = new Vue({
+            el: "#app",
+            data: {
+                wizard: emojify("wizard")
+            },
+            methods: {
+                lumos: cast(emojify("lumos")),
+                incendio: cast(emojify("incendio"))
+            }
+        })
+
+        // Vue.component('todo-item', {
+        //     props: ['todo'],
+        //     template: '<li>{{todo.text}}</li>'
+        // })
+
+        // var Student = {
+        //     name: "Danish",
+        //     gender: "male",
+        //     occupation: "Software Engineer",
+        //     salutation: "Mr.",
+        //     Address: {
+        //         country: "UAE",
+        //         city: "Dubai",
+        //         address: "Palm Jumairah"
+        //     }
+        // }
+
+        // var app = new Vue({
+        //     el: '#app',
+        //     data: {
+        //         message: 'Hello Vue!',
+        //         seen: false,
+        //         groceryList: [{
+        //             id: 0,
+        //             text: 'Vegetables'
+        //         }, {
+        //             id: 1,
+        //             text: 'Cheese'
+        //         }, {
+        //             id: 2,
+        //             text: 'Fruits'
+        //         }]
+        //     },
+        //     methods: {
+        //         reverseString: function() {
+        //             this.message = this.message.split('').reverse().join('');
+        //         },
+        //         toggleDisplay: function() {
+        //             this.seen = !this.seen;
+        //         }
+        //     }
+        // });
+
+        // app.message = Student.Address.city;
+        // app.seen = true;
+
+        // var loop = new Vue({
+        //     el: '#loop',
+        //     data: {
+        //         items: [{
+        //             name: 'Book'
+        //         }, {
+        //             name: 'Wallet'
+        //         }, {
+        //             name: 'Pen'
+        //         }, {
+        //             name: 'Phone'
+        //         }]
+        //     }
+        // });
+
+        // loop.items.push({
+        //     name: 'Laptop'
+        // });
+    </script>
+
+</body>
+
+</html>

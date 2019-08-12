@@ -1,0 +1,72 @@
+/* Layout */
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: url('images/background.jpg') center center no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#container {
+    width: 760px;
+    margin: 0 auto;
+}
+
+code {
+	display: block;
+	color: #339aaa;
+	background: white;
+	padding: 5px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+dl {
+    margin: 10px 0 20px;
+    padding: 10px;
+    background: #f0f0f0;
+    color: #353535;
+    border: dashed 2px black;
+}
+
+dl dt {
+    margin: 0 0 5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+dl code {
+    background: inherit;
+    padding: 0;
+}
+
+/* Background Images Lecture */
+
+.background-example {
+    height: 300px;
+    width: 300px;
+    border: solid 4px white;
+}
+
+#background-1 {
+    /* By default, background images repeat X & Y, and are position top left */
+    background-image: url('images/blue_background.jpg');
+}
+
+#background-2 {
+    background-color: #a3d;
+}
+
+#background-3 {
+    background-image: url('images/steak_background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#background-4 {
+    background: #ccc url('images/skull_background.jpg') bottom left repeat-x;
+}
+
+
+
+
