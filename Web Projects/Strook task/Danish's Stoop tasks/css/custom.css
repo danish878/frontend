@@ -1,0 +1,20 @@
+.btn{
+    background-color: #F90;
+    margin-top: 50px;
+    width: 200px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.date{
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+img{
+    width: 100%;   
+}
+
+a{
+    text-decoration: underline;
+}

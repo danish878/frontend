@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<!-- Website Design By: www.happyworm.com -->
+<title>Demo : Multi instanced jPlayer audio players</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../../dist/skin/blue.monday/css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../lib/jquery.min.js"></script>
+<script type="text/javascript" src="../../dist/jplayer/jquery.jplayer.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	$("#jquery_jplayer_1").jPlayer({
+		ready: function () {
+			$(this).jPlayer("setMedia", {
+				title: "Stirring of a fool",
+				m4a: "http://www.jplayer.org/audio/m4a/Miaow-08-Stirring-of-a-fool.m4a",
+				oga: "http://www.jplayer.org/audio/ogg/Miaow-08-Stirring-of-a-fool.ogg"
+			});
+		},
+		swfPath: "../../dist/jplayer",
+		supplied: "m4a, oga",
+		wmode: "window",
+		globalVolume: true,
+		useStateClassSkin: true,
+		autoBlur: false,
+		smoothPlayBar: true,
+		keyEnabled: true
+	});
+
+});
+//]]>
+</script>
+</head>
+<body>
+<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+<div id="jp_container_1" class="jp-audio">
+	<div class="jp-current-time">&nbsp;</div>
+	<div class="jp-progress">
+		<div class="jp-seek-bar">
+			<div class="jp-play-bar"></div>
+		</div>
+	</div>
+	<div class="jp-duration">&nbsp;</div>
+	
+	<div class="jp-controls">
+		<button class="jp-play">play</button>
+	</div>
+		
+	<div class="jp-no-solution">
+		<span>Update Required</span>
+		To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+	</div>
+	
+</div>
+
+</body>
+
+</html>
+

@@ -1,0 +1,244 @@
+<!DOCTYPE html><html>
+<head>
+	<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+	<meta name="author" content="dostContent"><link rel="shortcut icon" href="assets/images/favicon_1.ico">
+	<title></title>
+
+	<link href="assets/css/sidenav.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!-- <link href="assets/css/bootstrap-theme.css" rel="stylesheet" type="text/css"> -->
+	
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/timeline.css" rel="stylesheet" type="text/css">
+	<!-- <link href="assets/css/main.css" rel="stylesheet" type="text/css"> -->
+	
+
+	
+	<!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script><![endif]-->
+    </head>
+      <body class="fixed-left">
+<div id="wrapper">
+<div class="topbar">
+		<div class="topbar-left">
+			<div class="text-center">
+				<a href="index.html" class="logo">
+				<i class=""></i> <span><img src ="assets/images/logo999.png" style = "margin-top:0px;padding-left: 20px;"></span></a>
+				
+			</div>
+		</div>
+		<div class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<div class="">
+					
+					<form class="navbar-form pull-left hidden-sm hidden-xs" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control search-bar" placeholder="Type here for search...">
+						</div>
+						<button type="submit" class="btn btn-search">
+						<i class="fa fa-search"></i>
+						</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right pull-right">
+						<li class="dropdown hidden-xs">
+							<a href="#" data-target="#" class="dropdown-toggle fa fa-home fa-2x fa_font" data-toggle="dropdown" aria-expanded="true">
+						<!-- 	<i class="fa fa-envelope fa-2x">     								
+							</i>  -->
+							<!-- <span class="badge badge-xs badge-danger">3</span> -->
+							</a>
+							<ul class="dropdown-menu dropdown-menu-lg">
+								<li class="text-center fa fa-bell-o">Notification</li>
+								<li class="list-group">
+									<a href="#" class="list-group-item">
+										<div class="media">
+											<div class="pull-left"><em class="fa fa-user-plus fa-2x text-info"></em></div>
+											<div class="media-body clearfix">
+												<div class="media-heading">New user registered</div>
+												<p class="m-0"><small>You have 10 unread messages</small></p>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="media">
+											<div class="pull-left"><em class="fa fa-home fa-2x text-primary"></em></div>
+											<div class="media-body clearfix">
+												<div class="media-heading">New settings</div>
+												<p class="m-0"><small>There are new settings available</small></p>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="media">
+											<div class="pull-left"><em class="fa fa-home fa-2x text-danger"></em></div>
+											<div class="media-body clearfix">
+												<div class="media-heading">Updates</div>
+												<p class="m-0"><small>There are <span class="text-primary">2</span> new updates available</small></p>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item"><small>See all notifications</small></a>
+								</li>
+							</ul>
+						</li>
+						<li class="hidden-xs"><a href="#" id="btn-fullscreen" class="fa fa-laptop fa-2x fa_font"><i class=""></i></a></li>
+						<li class="hidden-xs"><a href="#" class="right-bar-toggle fa fa-comments fa-2x fa_font"><i class=""></i></a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle profile" data-toggle="dropdown" aria-expanded="true"><img src="assets/images/users/avatar-1.jpg" alt="user-img" class="img-circle"></a>
+							<ul class="dropdown-menu">
+								<li><a href="javascript:void(0)"><i class="md md-face-unlock"></i> Profile</a></li>
+								<li><a href="javascript:void(0)"><i class="md md-settings"></i> Settings</a></li>
+								<li><a href="javascript:void(0)"><i class="md md-lock"></i> Lock screen</a></li>
+								<li><a href="javascript:void(0)"><i class="md md-settings-power"></i> Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="left side-menu" style = "background-color:#fff;">
+		<div class="sidebar-inner slimscrollleft">
+			<div class="user-details">
+				<div class="pull-left"><img src="assets/images/users/avatar-1.jpg" alt="" class="thumb-md img-circle"></div>
+				<div class="user-info">
+					<div class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">John Doe <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="javascript:void(0)">
+									<i class="md md-face-unlock"></i> Profile
+									<div class="ripple-wrapper"></div>
+								</a>
+							</li>
+							<li><a href="javascript:void(0)"><i class="md md-settings"></i> Settings</a></li>
+							<li><a href="javascript:void(0)"><i class="md md-lock"></i> Lock screen</a></li>
+							<li><a href="javascript:void(0)"><i class="md md-settings-power"></i> Logout</a></li>
+						</ul>
+					</div>
+					<p class="text-muted m-0">Administrator</p>
+				</div>
+			</div>
+			<div id="sidebar-menu" style="background-color: #fff;">
+				<ul style = "background-color:#fff;">
+					<li><a href="index.html" class="waves-effect active" style = "background-color: #fff !important;color: rgb(122, 134, 143);"><i class="fa fa-home fa-2x"></i><span>Dashboard</span></a></li>
+					<li class="has_sub">
+						<a href="#" class="waves-effect"><i class="fa fa-envelope fa-2x"></i><span>Mail</span><span class="pull-right"><i class="md md-add"></i></span></a>
+						<ul class="list-unstyled">
+							<li><a href="inbox.html">Inbox</a></li>
+							<li><a href="email-compose.html">Compose Mail</a></li>
+							<li><a href="email-read.html">View Mail</a></li>
+						</ul>
+					</li>
+					<li><a href="calendar.html" class="waves-effect"><i class="fa fa-calendar"></i><span>Calendar</span></a></li>
+					<li><a href="calendar.html" class="waves-effect"><i class="fa fa-history"></i><span>Timeline</span></a></li>
+					
+				<!-- 	<li class="has_sub">
+						<a href="#" class="waves-effect"><i class=" "></i> <span>Elements</span> <span class="pull-right"><i class="md md-add"></i></span></a>
+					 <ul class="list-unstyled">
+							<li><a href="typography.html">Typography</a></li>
+							<li><a href="buttons.html">Buttons</a></li>
+							<li><a href="panels.html">Panels</a></li>
+							<li><a href="checkbox-radio.html">Checkboxs-Radios</a></li>
+							<li><a href="tabs-accordions.html">Tabs &amp; Accordions</a></li>
+							<li><a href="modals.html">Modals</a></li>
+							<li><a href="bootstrap-ui.html">BS Elements</a></li>
+							<li><a href="progressbars.html">Progress Bars</a></li>
+							<li><a href="notification.html">Notification</a></li>
+							<li><a href="sweet-alert.html">Sweet-Alert</a></li>
+						</ul>
+					</li> -->
+					<li class="has_sub">
+						<a href="request.html" class="waves-effect"><i class="fa fa-anchor fa-2x"></i><span>Requests</span><span class="pull-right"><i class="md md-add"></i></span></a>
+					<!-- 	<ul class="list-unstyled">
+							<li><a href="grid.html">Grid</a></li>
+							<li><a href="portlets.html">Portlets</a></li>
+							<li><a href="widgets.html">Widgets</a></li>
+							<li><a href="nestable-list.html">Nesteble</a></li>
+							<li><a href="ui-sliders.html">Sliders</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="pricing.html">Pricing Table</a></li>
+						</ul> -->
+					</li>
+					<li class="has_sub">
+						<a href="#" class="waves-effect"><i class="fa fa-cubes fa-2x"></i> <span>Wall</span> <span class="pull-right"><i class="md md-add"></i></span></a>
+						<!-- <ul class="list-unstyled">
+							<li><a href="material-icon.html">Material Design</a></li>
+							<li><a href="ion-icons.html">Ion Icons</a></li>
+							<li><a href="font-awesome.html">Font awesome</a></li>
+						</ul> -->
+					</li>
+			
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="content-page">
+		<div class="" style = "margin-top: 90px;">
+	<div class="">
+    <ul class="nav nav-tabs" id="myTab">
+        <li><a data-toggle="tab" href="#sectionA">Querries</a></li>
+        <li><a data-toggle="tab" href="#sectionB">Job Opernings</a></li>
+		<li><a data-toggle="tab" href="#sectionC">Leave Requests</a></li>
+		<li><a data-toggle="tab" href="#sectionD">General Requests</a></li>
+        <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li><a data-toggle="tab" href="#dropdown1">Dropdown1</a></li>
+                <li><a data-toggle="tab" href="#dropdown2">Dropdown2</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div id="sectionA" class="tab-pane fade in active">
+            <h3>Querries</h3>
+            <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+        </div>
+        <div id="sectionB" class="tab-pane fade">
+            <h3>Job Opernings</h3>
+            <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
+        </div>
+		<div id="sectionC" class="tab-pane fade">
+            <h3>Leave Requests</h3>
+            <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
+        </div>
+			<div id="sectionD" class="tab-pane fade">
+            <h3>General Requests</h3>
+            <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
+        </div>
+        <div id="dropdown1" class="tab-pane fade">
+            <h3>Leave Requests</h3>
+            <p>WInteger convallis, nulla in sollicitudin placerat, ligula enim auctor lectus, in mollis diam dolor at lorem. Sed bibendum nibh sit amet dictum feugiat. Vivamus arcu sem, cursus a feugiat ut, iaculis at erat. Donec vehicula at ligula vitae venenatis. Sed nunc nulla, vehicula non porttitor in, pharetra et dolor. Fusce nec velit velit. Pellentesque consectetur eros.</p>
+        </div>
+        <div id="dropdown2" class="tab-pane fade">
+            <h3>Dropdown 2</h3>
+            <p>Donec vel placerat quam, ut euismod risus. Sed a mi suscipit, elementum sem a, hendrerit velit. Donec at erat magna. Sed dignissim orci nec eleifend egestas. Donec eget mi consequat massa vestibulum laoreet. Mauris et ultrices nulla, malesuada volutpat ante. Fusce ut orci lorem. Donec molestie libero in tempus imperdiet. Cum sociis natoque penatibus et magnis dis parturient.</p>
+        </div>
+    </div>
+</div>
+
+
+		</div>
+	</div>
+	</div>
+				
+			
+			
+			<script src="assets/js/jquery.min.js"></script>
+			
+			<script src="assets/js/toDo/js/app.js"></script>
+			<script src="assets/js/toDo/js/parseService.js"></script>
+
+			
+			<script>
+				
+				var resizefunc = [];</script><script src="assets/js/moltran.min.js"></script><script src="assets/js/moment.js">
+				
+			</script>
+
+
+
+</body>
+</html>

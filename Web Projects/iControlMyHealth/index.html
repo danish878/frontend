@@ -1,0 +1,691 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project iControlMyHealth.com V1 </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+    <script src='js/respond.js'></script>
+</head>
+
+<body onload="startTime()">
+    <!-- Header -->
+    <header class="container">
+        <div class="pull-left">
+            <img src="img/logo.png" alt="" class=img-responsive>
+        </div>
+        
+        <div class="pull-right">
+            <div class="pull-left">
+                <!--<input type="text" style="height:33px">
+                <button href="#" class="btn btn-info">Search</a>-->
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Search</button>
+                </form>
+            </div>
+
+            <div class="pull-right">
+                <!--<a href="#">Login</a> <span>|</span>
+                <a href="#">Register</a>-->
+                <form class="navbar-form navbar-left" role="search">
+                    <button class="btn btn-info">Login</button>
+                    <button class="btn btn-info">Register</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    
+    <br>
+    
+    <!-- Navigation -->
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="glyphicon glyphicon-arrow-down"></span>
+                      MENU
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown">
+                                About Us
+                                <span class="caret"></span>
+                            </a>    
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Company Overview</a></li>
+                                <li><a href="#">Mission & Vision</a></li>
+                                <li><a href="#">Leadership and Experience</a></li>
+                                <li><a href="#">Board of Directors</a></li>
+                                <li><a href="#">Advisory Board</a></li>
+                            </ul>                    
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown">
+                                Diseases
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/diseases/alzheimer%E2%80%99s-disease" title="">Alzheimer’s Disease</a></li>
+                                <li><a href="/diseases/asthma">Asthma</a></li>
+                                <li><a href="/diseases/binge-eating-disorder">Binge Eating Disorder</a></li>
+                                <li><a href="/diseases/bipolar-disorder">Bipolar Disorder</a></li>
+                                <li><a href="/diseases/depression">Depression</a></li>
+                                <li><a href="/diseases/diabetes">Diabetes</a></li>
+                                <li><a href="/diseases/feeding-eating-disorders">Feeding and Eating Disorders</a></li>
+                                <li><a href="/diseases/high-blood-pressure">High Blood Pressure</a></li>
+                                <li><a href="/diseases/high-cholesterol">High Cholesterol</a></li>
+                                <li><a href="/diseases/menopause">Menopause</a></li>
+                                <li><a href="/diseases/mood-disorder">Mood Disorders</a></li>
+                                <li><a href="/diseases/obesity">Obesity</a></li>
+                                <li><a href="/diseases/osteoporosis">Osteoporosis</a></li>
+                                <li><a href="/diseases/pain">Pain</a></li>
+                                <li><a href="/diseases/polycystic-ovary-syndrome-pcos">Polycystic Ovarian Syndrome (PCOS)</a></li>
+                            </ul>                    
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown">
+                                Health & Lifestyle
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/health-n-lifestyle/fitness">Fitness</a></li>
+                                <li><a href="/health-n-lifestyle/healthy-living">Healthy Living</a></li>
+                                <li><a href="/health-n-lifestyle/super-foods">Super Foods</a></li>
+                                <li><a href="/health-n-lifestyle/health-spotlight">Health Spotlight</a></li>
+                            </ul>                    
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown">
+                                Treatment Options
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/treatment-options/acupunture">Acupuncture</a></li>
+                                <li><a href="/treatment-options/biologics">Biologics</a></li>
+                                <li><a href="/treatment-options/homeopathy">Homeopathy</a></li>
+                                <li><a href="/treatment-options/massage-therapy">Massage Therapy</a></li>
+                                <li><a href="/treatment-options/meditation">Meditation</a></li>
+                                <li><a href="/treatment-options/naturopathy">Naturopathy</a></li>
+                                <li><a href="/treatment-options/pharmaceuticals">Pharmaceuticals</a></li>
+                                <li><a href="/treatment-options/pilates">Pilates</a></li>
+                                <li><a href="/treatment-options/proboitics">Probiotics</a></li>
+                                <li><a href="/treatment-options/reiki">Reiki</a></li>
+                                <li><a href="/treatment-options/relaxation">Relaxation</a></li>
+                                <li><a href="/treatment-options/spinal-manupilation">Spinal Manipulation</a></li>
+                                <li><a href="/treatment-options/tai-chi">Tai Chi</a></li>
+                                <li><a href="/treatment-options/yoga">Yoga</a></li>
+                            </ul>                    
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown">
+                                Health Tools
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/adult-bmi-calculator-kg" title="">Adult BMI Calculator</a></li>
+                                <li><a href="/all-health-tools/child-bmi-calculator-metric" title="">Child BMI Calculator</a></li>
+                                <li><a href="/heart-risk-calculator" title="Heart Disease Risk Calculator">Heart Disease Risk Calculator</a></li>
+                                <li><a href="/dpp-risk-test" title="Diabetes Risk Test">Diabetes Risk Test</a></li>
+                                <li><a href="/all-health-tools/depression-test" title="Depression Test">Depression Test</a></li>
+                            </ul>                    
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown">
+                                Prevention Programs
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Diabetes Prevention Program (DPP)</a></li>
+                                <li><a href="#">Chronic Disease Self Management Programs (CDSMP)</a></li>
+                            </ul>                    
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown">
+                                Newsletters
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">Jan - Health Special</a></li>
+                                <li><a href="">Feb - Diabetes Special</a></li>
+                                <li><a href="">March - Women's Special</a></li>
+                                <li><a href="">April - Fitness Special</a></li>
+                                <li><a href="">May - Kids Special</a></li>
+                                <li><a href="">June - Diabetes Special</a></li>
+                                <li><a href="">July - Diabetes and Depression Connection</a></li>
+                                <li><a href="">August - Nutrition Special</a></li>
+                                <li><a href="">September - Obesity and Type 2 Diabetes</a></li>
+                                <li><a href="">October - Depression and Children</a></li>
+                                <li><a href="">November - Gestational Diabetes</a></li>
+                                <li><a href="">December - Health Trends 2014</a></li>
+                            </ul>                    
+                        </li>
+                    </ul> 
+                </div>
+                <hr><hr>
+             </nav> 
+            
+            <div class="container bar">
+                <div class="pull-left" style="margin-top: 7px">
+                    Don't Compromise  -- "Without knowing all your treatment options, you may be getting sub-optimal care"    
+                </div>
+
+                <div class="pull-right">
+                    <img src="img/donate.png" alt="" height="35px">
+                    <img src="img/social_facebook.png" alt="" height="35px">
+                    <img src="img/social_twitter.png" alt="" height="35px">
+                    <img src="img/social_rss.png" alt="" height="35px">
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+        
+            <div class="col-lg-7" style="padding-left:0px">
+                <!-- Crousal slider -->
+                <div id="myCarousel" class="carousel slide">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                    </ol>
+
+                    <!-- Wrapper for Slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="fill">
+                                <img src='img/ae1221ddc9a1d9830329227cb68b82df.jpg' alt='' width='100%'>
+                            </div>
+                            <div class="carousel-caption">
+                                <h3>Prevention is better than cure</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="fill">
+                                <img src='img/b6e2bfe9f8989b3ff6dcaa81bf634819.jpg' alt='' width='100%'>
+                            </div>
+                            <div class="carousel-caption">
+                                <h3>Pre-diabetes? Join diabetes prevention program</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="fill">
+                                <img src='img/eb442a228a6bd4123c7a1dbbc145b019.jpg' alt='' width='100%'>
+                            </div>
+                            <div class="carousel-caption">
+                                <h3>Be the Leader of the team “Your Health”</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="fill">
+                                <img src='img/f0a41b796b8db667c81aa6031e3cf579.jpg' alt='' width='100%'>
+                            </div>
+                            <div class="carousel-caption">
+                                <h3>Yoga is the sixth most popular CAM therapy among adult</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="fill">
+                                <img src='img/64f834eea5d5371ddf6704e2d694c296.jpg' alt='' width='100%'>
+                            </div>
+                            <div class="carousel-caption">
+                                <h3>360 degree view of your treatment options to achieve best</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="hotNews">
+                    <div class="block-1">
+                        <h3 class="title">News</h3>
+                    </div>
+                    <div class="block-2">    
+                        <div class="col-lg-4">
+                            <div class="col-lg-6 dd1">
+                                <img src="img/obese%20child.jpg" alt"" class="bsn-img">
+                            </div>
+                            <div class="col-lg-6 dd1">
+                                <a>Obesity and Liver Disease in Chil...</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="col-lg-6 dd1">
+                                <img src="img/asthma%20and%20heart%20attack.jpg" alt"" class="bsn-img">    
+                            </div>
+                            <div class="col-lg-6 dd1">
+                                <a>Asthma and Heart Attack</a>    
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="col-lg-6 dd1">
+                                <img src="img/Gestational_Diabetes.png" alt"" class="bsn-img">
+                            </div>
+                            <div class="col-lg-6 dd1">
+                                <a>Fried Food and Risk of Gestationa...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> <!-- end carousel div -->
+
+            <div class="col-lg-5" style="padding-right:0px; padding-left:0px">
+
+                <div class="col-lg-6" style="padding-right:0px">
+                    <div class="Diseases">Diseases</div>
+                    <div class="border">
+                        <h4 class="d1" style="margin-top:0px"> POLYCYSTIC OVARIAN</h4>
+                        <img src="img/pcos.jpg" alt="" width="100%">
+                        <h4 class="d1">MENOPAUSE</h4>
+                        <img src="img/menopausal-women.jpg" alt="" width="100%">
+                        <h4 class="d1">HIGH CHOLESTROL</h4>
+                        <img src="img/740e281c3cf1abba84aed8661bd63449.jpeg" alt="" width="100%">
+                    </div>
+                </div>
+
+                <div class="col-lg-6" style="padding-right:0px">
+                    <div class="healthBlog">Health Blog</div>
+                    <div class="border">
+                        <h2 class="h2">Evidence-Based Medicine</h2>
+                        <p class="health1">Evidence-Based Medicine by Danielle Ofri We were...</p>
+
+                        <h2 class="h2">The Physical Exam as Refuge</h2>
+                        <p class="health1">The Physical Exam as Refuge by Danielle Ofri...</p>
+
+                        <h2 class="h2">Healthy Eating in Children</h2>
+                        <p class="health1">Help Your Child to Eat Healthy A doughnut after...</p>
+
+                        <h2 class="h2">Low Back Pain and Obesity</h2>
+                        <p class="health1">Is Excessive Weight Hurting your Back? The weighing...</p>
+
+                        <h2 class="h2">Binge Eating Disorder</h2>
+                        <p class="health1">Is Your Teenager Struggling with Binge Eating?...</p>  
+                        <br>
+                        <a class="btn_view_all" href="#">View All <span class="glyphicon glyphicon-triangle-right"></span></a>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <br>
+
+    <div class="container">
+        <div class="row">
+        
+            <div class="col-lg-7 bb" style="padding-left:0px; padding-right:0px">
+                <div class="block">
+                    <div class="block-3">
+                        Health & Lifestyle
+                    </div>
+                    <hr><hr>
+                    
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="block-4" id="d1b1">
+                                <a href="#">Add Fiber to Your Food</a>
+                                <p class="item-desc">According to the National Diabetes Fact Sheet </p>
+                            </div>
+                            <div class="block-4" id="d1b2">
+                                <a href="#">Beat Your Sugar and Starch addition</a>
+                                <p class="item-desc">Are you someone who craves for sugar and can’t </p>
+                            </div>
+                            <div class="block-4" id="d1b3">
+                                <a href="#">Best Foods for Men</a>
+                                <p class="item-desc">Are you someone who craves for sugar and can’t </p>
+                            </div>
+                            <div class="block-4" id="d1b4">
+                                <a href="#">Delicious Honey</a>
+                                <p class="item-desc">Honey is a delectable sweet liquid that </p>
+                            </div>
+                        </div>
+                    
+                        <div class="col-lg-6">
+                            <div class="imgBlock" id="d1img">
+                                <img src="img/jamjpg.jpg" alt="" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="block">
+                    <div class="block-3">
+                        Health Tools
+                    </div>
+                    <hr><hr>
+                    
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="block-4" id="d2b1">
+                                <a href="#">Child BMI</a>
+                                <p class="item-desc">Child and Teen BMI Body Mass Index (BMI) is a</p>
+                            </div>
+                            <div class="block-4" id="d2b2">
+                                <a href="#">Diabetes Risk Test</a>
+                                <p class="item-desc">Diabetes risk test <b>How</b></p>
+                            </div>
+                            <div class="block-4" id="d2b3">
+                                <a href="#">Heart Disease Risk</a>
+                                <p class="item-desc">Heart Disease Risk Calculator The following</p>
+                            </div>
+                            <div class="block-4" id="d2b4">
+                                <a href="#">Depression Test</a>
+                                <p class="item-desc">Self-Assessment Test for Depression The </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="imgBlock" id="d2img">
+                                <img src="img/depression.jpg" alt="" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="block">
+                    <div class="block-3">
+                        Diseases
+                    </div>
+                    <hr><hr>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="block-4" id="d3b1">
+                                <a href="#">Alzheimer’s Diseases</a>
+                                <p class="item-desc">Alzheimer’s <b>Basics</b> Alzheimer’s Disease</p>
+                            </div>
+                            <div class="block-4" id="d3b2">
+                                <a href="#">Asthma</a>
+                                <p class="item-desc">Asthma <b>Basics</b> Asthma is a chronic</p>
+                            </div>
+                            <div class="block-4" id="d3b3">
+                                <a href="#">Binge Eating</a>
+                                <p class="item-desc">Binge Eating Disorder <b>Basics</b> Binge Eating</p>
+                            </div>
+                            <div class="block-4" id="d3b4">
+                                <a href="#">Bipolar Disorder</a>
+                                <p class="item-desc">Bipolar Disorder <b>Basics</b> Bipolar disorder</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="imgBlock" id="d3img">
+                                <img src="img/diseases.jpg" alt="" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="block">
+                    <div class="block-3">
+                        Treatment
+                    </div>
+                    <hr><hr>
+                    
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="block-4" id="d4b1">
+                                <a href="#">Acupuncture</a>
+                                <p class="item-desc">Acupuncture originated in China more than 2000</p>
+                            </div>
+                            <div class="block-4" id="d4b2">
+                                <a href="#">Biologics</a>
+                                <p class="item-desc">Biological products include a wide range of</p>
+                            </div>
+                            <div class="block-4" id="d4b3">
+                                <a href="#">Homeopathy</a>
+                                <p class="item-desc">Homeopathy is a form of complementary and</p>
+                            </div>
+                            <div class="block-4" id="d4b4">
+                                <a href="#">Massage Therapy</a>
+                                <p class="item-desc">Massage therapy has a long history in cultures</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="imgBlock" id="d4img">
+                                <img src="img/treatment.jpg" alt="" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="col-lg-5" style="padding-right: 0">
+                
+                <div class="col-lg-5" style="padding-left:0px">
+                    <div class="block01">
+                        <div class="block-5">
+                            Spotlight Of The Week
+                        </div>
+                        <img src="img/spotlight.jpg" alt="">
+                        <a href="#">Meditation In Reducing Binge Eating</a><br>
+                        <p>
+                            Power of Meditation in Reducing Binge Eating Eating disorders refer to a group of mental illnesses in which...
+                        </p>
+                    </div>
+                    
+                    <div class="block01">
+                        <div class="block-5">
+                            Kids' Health
+                        </div>
+                        <img src="img/kids.jpg" alt="">
+                        <a href="#">Dietary Fat In Your Child’s Diet</a><br>
+                        <p>
+                            Kid's Health Dietary Fat in Your Child’s Diet Facts about Fat
+                        </p>
+                    </div>
+                    
+                    <div class="block01">
+                        <div class="block-5">
+                            Senior Health
+                        </div>
+                        <img src="img/Senior-Health.jpg" alt=""><br>
+                        <a href="#">Physical Activity Is Essential To Healthy Aging</a>
+                        <p>
+                            Senior Health Physical Activity is Essential to Healthy Aging Active aging makes the difference. Now is the time...
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7" style="padding-right:0px; padding-left:10px">
+                    <div class="block04">
+                        <div class="block-6">
+                            ICMH Ambassadors
+                        </div>
+                        <div class="block-7">
+                            <div class="row">
+                                <div class="col-lg-6" style="padding-right:5px">
+                                    <img src="img/payal_1.jpg" alt=""><br>
+                                    <h2>Paypal</h2>
+                                    <p>
+                                        ICMH Ambassador Payal Hi! I am Payal, and I am...
+                                    </p>
+                                </div>
+                                <div class="col-lg-6" style="padding-left:5px">
+                                    <img src="img/leslie_1.jpg" alt=""><br>
+                                    <h2>Leslie</h2>
+                                    <p>
+                                        ICMH Ambassador Leslie In the spring of 2013, I...
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-lg-6" style="padding-right:5px">
+                                    <img src="img/Janice_1.jpg" alt=""><br>
+                                    <h2>Janice</h2>
+                                    <p>
+                                        ICMH Ambassador Janice At age 37, I lived in...
+                                    </p>
+                                </div>
+                                <div class="col-lg-6" style="padding-left:5px">
+                                    <img src="img/Johanna3.jpg" alt=""><br>
+                                    <h2>Johana</h2>
+                                    <p>
+                                        ICMH Ambassador Johanna I am Johanna, a 23-year-...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="block02">
+                        <h2>Diabetes Prevention Program</h2>
+                        <div class="block03">
+                            <img src="img/ChangeForLife.jpg" alt=""><br>
+                            <p>CDC Video Player</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h2>Diseases</h2>
+                        <ul class="nav block-footer">
+                            <li><a href="/diseases/alzheimer’s-disease"><span></span><p>Alzheimer’s Disease</p></a></li>
+                            <li><a href="/diseases/asthma"><span></span><p>Asthma</p></a></li>
+                            <li><a href="/diseases/binge-eating-disorder"><span></span><p>Binge Eating Disorder</p></a></li>
+                            <li><a href="/diseases/bipolar-disorder"><span></span><p>Bipolar Disorder</p></a></li>
+                            <li><a href="/diseases/depression"><span></span><p>Depression</p></a></li>
+                            <li><a href="/diseases/diabetes"><span></span><p>Diabetes</p></a></li>
+                            <li><a href="/diseases/feeding-eating-disorders"><span></span><p>Feeding &amp; Eating Disorder</p></a></li>
+                            <li><a href="/diseases/high-cholesterol"><span></span><p>High Cholesterol</p></a></li>
+                            <li><a href="/diseases/high-blood-pressure"><span></span><p>High Blood Pressure</p></a></li>
+                            <li><a href="/diseases/menopause"><span></span><p>Menopause</p></a></li>
+                            <li><a href="/diseases/mood-disorder"><span></span><p>Mood Disorder</p></a></li>
+                            <li><a href="/diseases/obesity"><span></span><p>Obesity</p></a></li>
+                            <li><a href="/diseases/osteoporosis"><span></span><p>Osteoporosis</p></a></li>
+                            <li><a href="/diseases/pain"><span></span><p>Pain</p></a></li>
+                            <li><a href="/diseases/polycystic-ovary-syndrome-pcos"><span></span><p>Polycystic Ovary Syndrome (PCOS)</p></a></li>
+                        </ul>
+                    
+                </div>
+                <div class="col-lg-3">
+                    <h2>Treatment</h2>
+                    <ul class="nav block-footer">
+                        <li><a href="/treatment-options/acupunture"><span></span><p>Acupunture</p></a></li>
+                        <li><a href="/treatment-options/biologics"><span></span><p>Biologics</p></a></li>
+                        <li><a href="/treatment-options/homeopathy"><span></span><p>Homeopathy</p></a></li>
+                        <li><a href="/treatment-options/massage-therapy"><span></span><p>Massage Therapy</p></a></li>
+                        <li><a href="/treatment-options/meditation"><span></span><p>Meditation</p></a></li>
+                        <li><a href="/treatment-options/naturopathy"><span></span><p>Naturopathy</p></a></li>
+                        <li><a href="/treatment-options/pharmaceuticals"><span></span><p>Pharmaceuticals</p></a></li>
+                        <li><a href="/treatment-options/pilates"><span></span><p>Pilates</p></a></li>
+                        <li><a href="/treatment-options/proboitics"><span></span><p>Proboitics</p></a></li>
+                        <li><a href="/treatment-options/reiki"><span></span><p>Reiki</p></a></li>
+                        <li><a href="/treatment-options/relaxation"><span></span><p>Relaxation </p></a></li>
+                        <li><a href="/treatment-options/spinal-manupilation"><span></span><p>Spinal Manipulation</p></a></li>
+                        <li><a href="/treatment-options/tai-chi"><span></span><p>Tai Chi</p></a></li>
+                        <li><a href="/treatment-options/yoga"><span></span><p>Yoga</p></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h2>Health & Lifestyle</h2>
+                    <ul class="nav block-footer">
+                        <li><a href="/health-n-lifestyle/fitness"><span></span><p>Fitness</p></a></li>
+                        <li><a href="/health-n-lifestyle/healthy-living"><span></span><p>Healthy Living</p></a></li>
+                        <li><a href="/health-n-lifestyle/super-foods"><span></span><p>Super Foods</p></a></li>
+                        <li><a href="/health-n-lifestyle/health-spotlight"><span></span><p>Health Spotlight</p></a></li>
+                        <li><a href="#"><span></span><p>Diabetes Prevention Program</p></a></li>
+                        <li><a href="/health-and-lifestyle/resources-references"><span></span><p>References &amp; Resources</p></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h2>Health Tools</h2>
+                    <ul class="nav block-footer">
+                        <li><a href="/adult-bmi-calculator-kg"><span></span><p>Adult BMI Calculator</p></a></li>
+                        <li><a href="/all-health-tools/child-bmi-calculator-metric"><span></span><p>Child BMI Calculator</p></a></li>
+                        <li><a href="/heart-risk-calculator"><span></span><p>Heart Disease Risk Calculator</p></a></li>
+                        <li><a href="/dpp-risk-test"><span></span><p>Diabetes Risk Test</p></a></li>
+                        <li><a href="/all-health-tools/depression-test"><span></span><p>Self-Assessment Test for Depression </p></a></li></ul>
+                    </ul>
+                </div>
+            
+            </div>
+            
+            <div class="footer-bar">
+                <div class="pull-left">
+                    <a class="fb" href=""><span>facebook</span></a>
+                    <a class="twit" href=""><span>twitter</span></a>
+                    <a class="youtube" href=""><span>twitter</span></a>
+                    <a class="rss" href=""><span>twitter</span></a>
+                    <a class="vvv" href=""><span>twitter</span></a>
+                </div>
+                
+                <div class="pull-right">
+                    TOP
+                </div>
+            </div>
+        
+            
+            <div class="footer-bar-1">
+                <ul class="text-center">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about-us">About Us</a></li>
+                    <li><a href="/diseases/alzheimer’s-disease">Diseases</a></li>
+                    <li><a href="/health-n-lifestyle/fitness">Health &amp; Lifestyle</a></li>
+                    <li><a href="/treatment-options/acupunture">Treatment options</a></li>
+                    <li><a href="/all-health-tools/adult-bmi-calculator">Health Tools</a></li>
+                    <li><a href="/prevention-programs">Prevention Programs</a></li>
+                </ul>
+            </div>
+        
+            <div class="footer-bar-1">
+                <div class="footerUL">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about-us">Contact Us</a></li>
+                    <li><a href="/diseases/alzheimer’s-disease">Privacy</a></li>
+                    <li><a href="/health-n-lifestyle/fitness">Terms Of Use</a></li>
+                    <li><a href="/treatment-options/acupunture">About Us</a></li>
+                    <li><a href="/all-health-tools/adult-bmi-calculator">Site Map</a></li>
+                </ul>
+                </div>
+            </div>
+            
+            <div style="text-align: center">
+                Copyright © 2014 iControlMyHealth. All Rights Reserved.
+            </div>
+        
+        <br>
+        
+        </div>
+    </footer>
+    
+    
+	<!-- javascript -->
+	<script src='http://code.jquery.com/jquery-latest.min.js'></script>
+	<script src='js/bootstrap.min.js'></script>
+    <script src='js/custom.js'></script>
+    
+</body>
+</html

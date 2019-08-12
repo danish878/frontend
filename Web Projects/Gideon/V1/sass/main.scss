@@ -1,0 +1,997 @@
+//@import url('http://fonts.googleapis.com/css?family=Titillium+Web:200'); 
+
+@font-face{
+    font-family:'Titillium Regular';
+    src:url('../fonts/Titillium-Regular.otf'); 
+}
+@font-face{
+    font-family:'Titillium RegularItalic';
+    src:url('../fonts/Titillium-RegularItalic.otf'); 
+}
+@font-face{
+    font-family:'Titillium Semibold';
+    src:url('../fonts/Titillium-Semibold.otf'); 
+}
+@font-face{
+    font-family:'Titillium SemiboldItalic';
+    src:url('../fonts/Titillium-SemiboldItalic.otf'); 
+}
+@font-face{
+    font-family:'Merriweather Regular';
+    src:url('../fonts/Merriweather-Regular.ttf'); 
+}
+@font-face{
+    font-family:'Merriweather Black';
+    src:url('../fonts/Merriweather-Black.ttf'); 
+}
+@font-face{
+    font-family:'FontAwesome';
+    src:url('../fonts/FontAwesome.otf'); 
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    background-size: 100% 455px;
+    font-family: "Titillium Regular", sans-serif;
+}
+.fullWidth{
+    width: 100%;
+    background-color: black;
+//    opacity: 0.8;
+    height: 55px;
+    position: fixed;
+    top:0;
+    z-index: 1030;
+    
+    .wrapper{
+        width: 1280px;
+        margin: 0 auto;
+    
+    
+        .navbar-default{
+            background-color: transparent;
+            color: #fff;
+            border: 0;
+            height: 55px;
+            width: 1280px;
+            position: fixed;
+            top:0;
+            z-index: 1030;
+
+            .container{
+                width: 100%;  
+
+                .text{
+                    margin: 18px 0 0 0px;
+                    font-size: 13px;
+                    float: left;           
+                }
+                .navbar-nav{
+                    float: left;
+                    margin: 18px 0 0 63px;
+                    font-size: 13.3px;
+
+                    li{
+
+                        a{
+                            color: white;   
+                            padding: 0 0 0 5px;
+                        }    
+
+                        a:hover{
+                            text-decoration: underline;
+                            color: white;
+                        }
+
+                        a::after{
+                            margin-left: 5px;
+                            content: '|';
+                        }
+                    }
+                    li:last-child{
+                        a::after{
+                            margin-left: 5px;
+                            content: '';
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+#wrapper{
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+.fullOverlay{
+    z-index: 2000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: black;
+    opacity: .3;
+}
+.bold {
+    font-weight: bold;
+    font-family:'Titillium Semibold';
+}
+.italic {
+    font-style: italic;
+}
+.boldItalic {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.gradientBackground{
+    position: fixed;
+    z-index: 1;
+    margin: -48px 0 0 -50px;
+    width: 1280px;
+    height: 200px;
+    opacity: 0.7;
+    background: -webkit-linear-gradient(#777, transparent); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#777, transparent); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#777, transparent); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#777, transparent); /* Standard syntax */
+}
+
+.logo{
+    width: 201px;
+    height: 211px;
+    background-image: url("../images/logo.png");
+    position: fixed;
+    z-index: 1050;
+    left: 50%;
+    margin-left: -600px;
+    top: 0px;
+}
+.navbar{
+    border-radius: 0;   
+}
+.smallLogo{
+    width: 323px;
+    color: white;
+    font-size: 18.5px;
+    margin: 10px 0 0 23px;
+    display: block;
+
+    div{
+        img{
+            margin-top:-1px;   
+        }
+        span{
+            margin: 0px 0 0 13px;   
+            display: inline-block;
+        }
+        display: none;
+    }
+}
+
+.verticalCenter{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.container{
+    width: 1210px; 
+    
+    .col-md-9{
+        padding: 0; 
+    }
+    .search{
+        position: relative;
+        
+        .input-group{
+    //        position: fixed;
+    //        z-index: 1030;
+
+            ::-webkit-input-placeholder {
+                font-size: 18px;
+                line-height: 29px;
+            }
+            :-moz-placeholder { /* Firefox 18- */
+                font-size: 18px;
+                line-height: 29px;
+            }
+            ::-moz-placeholder {  /* Firefox 19+ */
+                font-size: 18px;
+                line-height: 50px;
+            }
+            :-ms-input-placeholder {  
+                font-size: 18px;
+                line-height: 29px;
+            }
+
+            margin-left: 1px;
+
+            .startText{
+                border-radius: 0;
+                font-family:'Titillium Semibold';
+                background-color: white;
+                height: 60px;
+                font-size: 21px;
+                float: left;
+                padding-right: 0;
+                padding-top: 4px;
+                padding-left: 22px;    
+            }
+            .autosubmit{
+                border: 0;
+                padding: 6px 0 0 8px;
+                background-color: white;
+                height: 60px;
+                outline: none;
+                border-color: white;
+                box-shadow: none;
+                width: 507px;
+                font-size: 21px;
+            }
+            .autosubmit:focus { 
+                outline: none;
+                border-color: white;
+                box-shadow: none;
+            }
+            .submit{
+                float: left;
+
+                .btn{
+                    padding: 0 28px;
+                    width: 88px;
+                    background-color: white;
+                    height: 60px;
+                    border-radius: 0;
+
+                    .fa-search{
+                        font-size: 40px;   
+                    }
+                }
+            }
+            .cart{
+                display: block;
+                height: 60px;
+                width: 215px;
+                float: left;
+                background-color: #eee;
+
+                div{
+                    width: 128px;
+                    text-align: right;
+                    float: left;
+
+                    p{
+                        font-family:'Titillium Semibold'; 
+                        color: #333;
+                        font-size: 20px;
+                        margin: 12px 2px 0 0;
+                        padding:0;
+                        line-height: 10px;
+                    }
+                    span{
+                        display: inline-block;
+                        color: #999; 
+                        font-size: 11px;
+//                        margin: 6px 3px 0 0;
+                        margin: 0 3px 0 0;
+                    }
+                }
+                .cartIcon{
+                    float: left; 
+                    display: inline-block;
+                    margin: 8px 0 0 7px;
+//                    margin: 0 0 0 7px;
+                }
+            }
+        }
+    
+        .searchResult{
+            background-color: white;
+            height: 522px;
+            width: 903px;
+            position: absolute;
+            top: 10px;
+            margin-left: 1px;
+            border-top: 1px solid #EEE;
+            padding-top: 9px;
+            padding-left: 98px;
+            
+            .head{
+                text-align: right;
+                padding-right: 23px;
+                font-size: 14px;
+                
+                .title{
+                    font-family:'Titillium Regular';   
+                }
+            }
+            .addons{
+                list-style: none;
+                padding-left: 0;
+                margin-top: -8px;
+                height: 180px;
+                
+                li{
+                    
+                    
+                    a{
+                        color: #333;
+                        line-height: 33px;
+                        font-size: 15px;
+                    }
+                    .added{
+                        color: #999;   
+                    }
+                }
+            }
+            .line{
+                text-align: left;
+                padding-right: 0;
+                height: 41px;
+                
+                .left{
+                    float: left;
+                    width: 637px;
+                    
+                    hr{
+                        margin-top: 14px;
+                    }
+                }
+                .right{
+                    float: left;
+                    margin-left: 21px;
+                }
+            }
+            .productAddons{
+                height: 163px;
+                
+                .col-md-6{
+                    padding: 0;
+                    border-right: 1px solid #DDD;
+                    width: 381px;
+                    
+                    img{
+                        height: 70px;   
+                    }
+                    .left{
+                        float: left;
+                    }
+                    .right{
+                        float: left;
+                        height: 92px;
+                        width: 300px;
+                        padding: 9px 0 0 31px;
+                        
+                        b{
+                            
+                        }
+                        span{
+                            display: block;
+                            padding-top: 4px;
+                            font-family:'Titillium RegularItalic';
+                        }
+                    }
+                }
+                .noBorder{
+                    border: none;
+                    padding-left: 23px;
+                    width: 400px;
+                }
+            }
+            .footNote{
+                margin-top: 29px;
+                margin-left: -2.5px;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+#searchResult{
+    margin-top: 50px;
+}
+
+.fixedCategories{
+    position: fixed;
+    z-index: 1030;
+}
+
+.categories{
+    background-color: white; 
+    margin: 124px 15px 0 1px;
+    position: relative;
+    
+    .categoryBtn{
+        font-family:'Titillium Semibold'; 
+        background-color: white;
+        display: block;
+        height: 60px;
+        color: black;
+        padding: 17px 0 11px 24px;
+        font-size: 21px;
+        margin-bottom: 2px;
+        
+        span{
+            margin-left: 9px;   
+        }
+    }
+    
+    ul{
+        list-style: none;
+        padding: 0 24px 13px 24px;
+        
+        li.active{
+            font-weight: bold;
+        }
+        
+        li{
+            height: 40px;
+            border-bottom: 1px solid #DDD;
+            padding-top: 8px;
+            position: relative;
+            
+            a{
+                color: black;
+                font-size: 17px;
+            }
+            
+            .patch{
+                width: 20px;
+                height: 38px;
+                background-color: white;
+                position: absolute;
+                top: 0;
+                left: 250px;
+                z-index: 2000;
+            }
+            
+            .submenu{
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                height: 425px; 
+                width: 618px;
+                background-color: white;
+                border-left: 1px solid #DDD;
+                padding: 30px 0 0 40px;
+
+                .col-lg-4{
+                    width: 164px;
+                    margin-right: 28px;
+                    padding:0;
+
+                    .subCategorie{
+                        padding: 0 0 0 3px;
+                        margin-top: 32px;
+                        border-right: 1px solid #DDD;
+                        height: 300px;
+
+                        a{
+                            display: block;
+                            color: black;
+                            line-height: 30px;
+                            font-size: 17px;
+                        }
+                        .italic{
+                            text-decoration: underline;
+                            font-size: 15.5px;
+                        }
+                    }
+
+
+                }
+                .heading{
+                    font-size: 17px;
+                    padding-left: 2px;
+                    display: inline-block;
+                    margin-top: -1px;
+                }
+                img{
+                    width: 107px;
+
+                }
+
+                .popularItems{
+                    .heading{
+                        width: 100%;
+                        float: left;
+                        margin-left: -1px;
+                    }
+
+                    .simpleProduct{
+                        margin-top: 40px;
+                        width: 50%;
+                        float: left;
+
+                        a{
+                            display: block;
+                            color: black;
+                        }
+                        .title{
+                            font-size: 14px;
+                            line-height: 21px;
+                            margin-top: -1px;
+                        }
+                        .author{
+                            font-style: italic;
+                            font-weight: bold;
+                            font-size: 13px; 
+                            margin-top: 5.5px;
+                        }
+                        .price{
+                            color: #E51723;
+                            font-weight: bold;
+                            margin-top: 18px;
+                        }
+                        .desc{
+                            margin-left: 2px;
+                            margin-top:21px;
+                        }
+                        .desc1{
+                            margin-left: 29px;
+                            margin-top:17px;  
+                        }
+
+                    }
+                }
+
+            }
+        }
+        li:last-child{
+            border: none;   
+        }
+        li:hover{
+            a{
+                font-weight: bold;
+                text-decoration: none;
+            }
+            .submenu{
+                a{
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
+
+.newsLetter{
+    padding: 17px 25px;
+    margin: 16px 17px 0 1px; 
+    background-color: white; 
+    height: 314px;
+    width: 282px;
+    
+    h1{
+        margin: 0 0 18px 0;
+        font-size: 21px;
+    }
+    p{
+        line-height: 24px;   
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+    .form-group{
+        margin-bottom: 10px;
+        
+        .form-control{
+            background-color: #EBEBEB;
+            border: 0;
+            border-radius: 0;
+            height: 40px;
+            padding: 10px 0 6px 15px;
+            margin-bottom: 13px;
+        }    
+        
+        ::-webkit-input-placeholder {
+            font-size: 17px;
+            line-height: 19px;
+            color: #555;
+        }
+    }
+    form{
+        .btn-success{
+            margin-top: 12px;
+            background-color: #E40613;
+            border: 0;
+            border-radius: 0;
+            width: 100%;
+            text-transform: uppercase;
+            font-size: 17.5px;
+            padding-top: 8px;
+            height: 35px;
+        }
+    }
+}
+
+.item3{
+    background-color: white;
+    height: 392px; 
+    margin: 65px -1px 0 1px;
+        
+    .Uitgelicht{
+        padding: 10px 0 0 29px;   
+        font-size: 21px;
+        font-family:'Titillium Semibold';
+    }
+    img{
+        float: left; 
+        margin: 9px 0 0 20px; 
+        width: 361px;   
+    }
+    .hopeMessage{
+        float: left; 
+        margin: 4px 0 0 23px;
+        font-size: 15px;
+        line-height: 27px;
+        
+        .bold{
+            font-family:'Titillium Semibold';
+        }
+        
+        h1{
+            font-family:'Titillium Semibold';
+            font-size: 21px;
+            font-weight: bold;
+            padding-bottom: 18px;
+            line-height: 30px;
+        }
+        
+        .fa{
+            color: red; 
+            padding-left: 5px;
+            
+            span{
+                font-family:'Titillium Regular';   
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.item4{
+    margin: 14px 5px 16px 1px; 
+    background-color: white; 
+    height: 50px;
+    
+    .head{
+        margin: 0;
+        padding: 15px 0 0 22px;
+        font-size: 21px;   
+    }
+}
+
+
+
+
+.item5{
+    height: 323px;
+        
+    .product{
+        background-color: white;
+        width: 215.5px;
+        height: 323px;
+        float: left;
+        margin-right: 14px;
+        position: relative;
+        text-align: center;
+        
+        .labelTop{
+            background-image: url("../images/head.png");
+            background-repeat: no-repeat;
+            width: 138px;
+            height: 29px;
+            color: white;
+            text-align: left;
+            text-align: center;
+            margin-bottom: 14px;
+        }
+        .noLabel{
+            background-image: none;
+            height: 29px;
+            margin-bottom: 14px;
+        }
+        .photo{
+            text-align: center;
+            display: block;
+
+            img{
+                width: 107px;    
+            }
+        }
+        .title{
+            .bold{
+                font-size: 14px;   
+                margin-top: 23px;
+            }
+            .italic{
+                font-size: 13px;
+                margin-top: 1px;
+            }
+        }
+
+        .price{
+            height: 108px;
+            
+            span{
+                color: red;
+                text-decoration: line-through;
+            }
+            .bold{
+                display: inline-block;
+                margin-top: 4px;
+                color: red;
+                text-decoration: none;
+            }
+        }
+        .overlay{
+            display: none;
+            margin-right: 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 215.5px;
+            height: 323px;
+            z-index: 10;
+            background-color: white;
+            opacity: 0.9;
+            text-align: left;
+            
+            .reviews{
+                display: block;
+                
+                padding: 26px 0 0 27px;
+                
+                .fa-star{
+                    font-size: 30px;
+                }
+                .fa-star:hover{
+                    text-decoration: none;
+                    color: red;
+                }
+                .total:hover{
+                    text-decoration: none;
+                }
+                .active{
+                    color: red;
+                }
+                .notActive{
+                    color: gray; 
+                }
+                .total{
+                    display: block;   
+                    margin-top: 1px;
+                    font-size: 14px;
+                    color: black;
+                }
+            }
+            .reviews:hover{
+                text-decoration: none;
+            }
+            .btn{
+                display: inline-block;
+                padding: 31px 0 0 25px;
+                font-size: 21px;
+                color: black;
+                
+                .fa-angle-right{
+                    padding-left: 4px;
+                }
+            }
+            .addCart{
+                width: 164px;
+                height: 36px;
+                margin: 120px 0 0 26px;
+                padding: 1px 0 0 14px;
+                border: 0;
+                border-radius: 0;
+                background-color: #E40613;
+                background-image: url('../images/plus.png');
+                background-repeat: no-repeat;
+                background-position: 12px;
+                color: white;
+                font-size: 14px;
+                font-family:'Titillium Semibold';
+            }
+        }
+    }
+    .lastProduct{
+        margin-right: 0;   
+    }
+    .product:hover{
+        .overlay{
+            display: block;
+        }
+    }
+    
+}
+
+.item8{
+    height: 320px;
+    
+    .box{
+        background-color: white;
+        height: 319px;
+    }
+}
+
+.item11{
+    height: 322px;
+    
+    .box{
+        background-color: white;
+        height: 323px;
+    }
+}
+
+.hideDiv{
+    display:none;   
+}
+.showDiv{
+    display:block;   
+}
+
+footer{
+    background-image: url('../images/footerBackground.png');
+    width: 100%;
+    
+    .container{
+        height: 430px;
+        width: 1280px;
+        color: white;
+        padding: 121px 0 0 40px;
+
+        .row{
+            height: 251px;
+            
+            h3{
+                font-family:'Merriweather Regular';
+                font-size: 17px;
+            }
+            ul{
+                list-style: none;
+                padding-left: 0;
+                padding-top: 3px;
+
+                li{
+                    a{
+                        color: white; 
+                        font-size: 13px;
+                        line-height: 25px;
+                    }
+                }
+            }
+            .Menu{
+                margin-left: -5px;
+            }
+            .Betaalmethodes{
+                margin-left: -44px;
+                ul{
+                    li{
+                        a{
+                            line-height: 28px
+                        }
+                    }
+                }
+            }
+            .Klantenwaardering{
+                padding-left: 32px;
+
+                .left{
+                    float: left;
+                    font-family:'Merriweather Black';
+                    font-size: 25px;
+                    margin: 7px 0 0 2px;
+                }
+                .right{
+                    float: left;
+                    margin: 1px 0 0 22px;
+                    font-size: 13px;
+
+                    .line1{
+                        margin-top: 7px;
+                    }
+                    .line2{
+                        margin-top: 3px;
+                        color: #bbb;
+                    }
+                    .line3{
+                        margin-top: 14px;
+                    }
+                }
+            }
+            .Volg{
+                padding-left: 62px;
+                width: 340px;
+                padding-right: 0;
+
+                .line1{
+                    margin: 18px 0 0 1px;   
+                    height: 35px;
+
+                    .left{
+                        float: left;   
+                    }
+                    .right{
+                        float: left;   
+                        padding: 1px 0 0 8px;
+                        font-size: 8px;   
+                    }
+                }
+                .line2{
+                    height: 50px;
+                }
+                .line3{
+                    font-size: 21px;
+
+                    span{
+                        margin-right: 15px;   
+                    }
+
+                    .fa-google-plus-square:hover{
+                        color: #DF4B38;
+                    }
+                    .fa-facebook-official:hover{
+                        color: #3765A3;
+                    }
+                    .fa-twitter:hover{
+                        color: #64A8F2;
+                    }
+                }
+            }
+        }
+        .copyright{
+            height: 50px;   
+            width: 1265px;
+            padding-left: 0;
+
+            .smallLogo{
+                margin: 12px 0 0 13px;   
+            }
+            .footImg{
+                float: left;
+                display: inline-block;
+                padding: 18px 0 0 52px;
+            }
+            .navbar-nav{
+                float: left;
+                padding: 17px 0 0 5px;
+                font-family:'Merriweather Regular';
+
+                li{
+                    a{
+                        color: white;   
+                        padding: 0 0 0 5px;
+                        font-size: 11px;
+                        line-height: 30px;
+                    }    
+
+                    a:hover{
+                        font-weight: bold;
+                        color: white;
+                        background-color: transparent;
+                    }
+
+                    a::after{
+                        margin-left: 7px;
+                        margin-right: 5px;
+                        content: '|';
+                    }
+                }
+                li:last-child{
+                    a::after{
+                        content: '';
+                    }
+                }
+            }
+
+
+        }
+    }
+    
+}

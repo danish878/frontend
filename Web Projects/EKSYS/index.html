@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>EKSYS</title>
+		<!-- Bootstrap Core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Fontawesome CSS -->
+		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<!-- Custom CSS -->
+		<link href="css/custom.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<header class="header">
+					<div class="col-md-12 col-sm-12">
+						<a href="#"><img src="images/logo.png" class="img-responsive center-block"></a>
+					</div>
+				</header>
+				<nav class="navigation" style="max-width: 1162px;">
+					 <div class="inner-container">
+		                <div class="col-lg-2 inner" id="dropdown1-parent">
+		                    <img src="images/head.png" class="img-responsive center top-space" style="width: 57px;
+		    height: 68px;">
+		                    <h6 class="right list-item">Hendrik de Zeeuw</h6>
+		                </div>
+		                <div class="col-lg-2 inner" id="dropdown2-parent">
+		                    <img src="images/church.png" class="img-responsive center top-space" style="width: 59px;
+		    height: 71px;">
+		                    <h6 class="right list-item">Gemeente</h6>
+		                </div>
+		                <div class="col-lg-2 inner" id="dropdown3-parent">
+		                    <img src="images/horn.png" class="img-responsive center" style="padding-top: 37px;
+		  height: 70px;
+		  width: 51px;">
+		                    <h6 class="right list-item">Help mee!</h6>
+		                </div>
+		                <div class="col-lg-2 inner" id="dropdown4-parent">
+		                    <img src="images/menu.png" class="img-responsive center" id="menu-cross" style="padding-top:31px">
+		                    <h6 class="right list-item" style="padding-top: 19px;">Menu</h6>
+		                </div>
+		            </div>
+				</nav>
+		        <div class="dropdown" id="dropdown1" style="display:none;">
+		            <div class="col-lg-3">
+		                <h2 class="dropdown-header">
+		                    Gegevens wijzijen
+		                </h2>
+		                <ul class="ul">
+		                    <li class="options"><span class="fa fa-angle-right"></span> &nbsp; Foto wijzijen</li>
+		                    <li class="options top-space-items"><span class="fa fa-angle-right"> </span> &nbsp; Adresgegevens wijzijen</li>
+		                    <li class="options top-space-items"><span class="fa fa-angle-right"> </span> &nbsp; persoonsgegevens wijzijen</li>
+		                    <li class="options top-space-items"><span class="fa fa-angle-right"> </span> &nbsp; inloggegevens wijzijen</li>
+		                    <li class="options top-space-items"><span class="fa fa-angle-right"> </span> &nbsp; Gebooorte wijzijen</li>
+		                </ul>
+		            </div>
+		            <div class="col-lg-3">
+		                <h2 class="dropdown-header">
+		                    Privacy
+		                </h2>
+		                <ul class="ul">
+		                    <li class="options"><span class="fa fa-angle-right"></span> &nbsp; Privacy instelligen</li>
+		                </ul>
+		            </div>
+		            <div class="col-lg-3">
+		                <h2 class="dropdown-header">
+		                    Pastorat
+		                </h2>
+		                <ul class="ul">
+		                    <li class="options"><span class="fa fa-angle-right"></span> &nbsp; Gesprek aanvragen</li>
+		                    <li class="options top-space-items"><span class="fa fa-angle-right"></span> &nbsp; Gebeds verzoek</li>
+		                </ul>
+		            </div>
+		        </div>
+		        <div class="dropdown" id="dropdown2" style="display:none;">
+		            <div style="max-width:300px;min-height:250px;padding-left:15px;float:left;">
+		                <h2 class="dropdown-header">
+		                    Agenda
+		                </h2>
+		                <ul class="ul">
+		                    <li class="options" style="padding-top:17px;"><span class="fa fa-angle-right"></span> &nbsp; (Leeftijd)activiteiten</li>
+		                    <li class="options top-space-items"><span class="fa fa-angle-right"> </span> &nbsp; Gemeente activiteiten</li>
+		                    <li class="options top-space-items"><span class="fa fa-angle-right"> </span> &nbsp; Activieit aanvragen</li>
+		                </ul>
+		            </div>
+		            <div style="max-width:300px;min-height:250px;padding-left:15px;float:left;margin-left:30px;margin-right:30px;">
+		                <h2 class="dropdown-header">
+		                    Nieuws
+		                </h2>
+		                <ul class="ul">
+		                    <li class="options" style="padding-top:16px;"><span class="fa fa-angle-right"></span> &nbsp; (Leeftijd)nieuws</li>
+		                    <li class="options top-space-items"><span class="fa fa-angle-right"> </span> &nbsp; Gemeente nieuws</li>
+		                    <li class="options top-space-items"><span class="fa fa-angle-right"> </span> &nbsp; Nieuws indienen</li>
+		                </ul>
+		            </div>
+		            <div style="max-width:300px;min-height:250px;padding-left:15px;float:left;margin-left:30px;">
+		                <h2 class="dropdown-header">
+		                    Foto albums
+		                </h2>
+		                <ul class="ul">
+		                    <li class="options" style="padding-top:17px;"><span class="fa fa-angle-right"></span> &nbsp; (Leeftijd)Foto albums</li>
+		                    <li class="options top-space-items"><span class="fa fa-angle-right"> </span> &nbsp; Gemeente nieuws</li>
+		                    <li class="options top-space-items"><span class="fa fa-angle-right"> </span> &nbsp; Nieuws indienen</li>
+		                </ul>
+		            </div>
+		            <div style="max-width:300px;min-height:250px;padding-left:15px;float:left;margin-left:35px;">
+		                <h2 class="dropdown-header">
+		                    Leden
+		                </h2>
+		                <ul class="ul">
+		                    <li class="options" style="padding-top:17px;"><span class="fa fa-angle-right"> </span> &nbsp; (Leeftijd)Leden</li>
+		                    <li class="options top-space-items"><span class="fa fa-angle-right"> </span> &nbsp; Alle leden</li>
+		                </ul>
+		            </div>
+		            <div style="max-width:300px;min-height:250px;padding-left:15px;float:left;margin-left:85px;">
+		                <h2 class="dropdown-header">
+		                    Prikbord
+		                </h2>
+		                <ul class="ul">
+		                    <li class="options" style="padding-top:17px;"><span class="fa fa-angle-right"></span> &nbsp; Mededeligen</li>
+		                    <li class="options top-space-items"><span class="fa fa-angle-right"> </span> &nbsp; Aanbod</li>
+		                    <li class="options top-space-items"><span class="fa fa-angle-right"> </span> &nbsp; Gezocht</li>
+		                </ul>
+		            </div>
+		        </div>
+		        <div class="dropdown" id="dropdown3" style="display:none;">
+		            <div class="col-lg-3">
+		                <h2 class="dropdown-header">
+		                    HELP ME
+		                </h2>
+		                <ul class="ul">
+		                    <li class="options"><span class="fa fa-angle-right"></span> &nbsp; Foto wijzijen</li>
+
+		                </ul>
+		            </div>
+
+		        </div>
+
+		        <div class="dropdown" id="dropdown4" style="display:none;">
+		            <div class="col-lg-3">
+		                <h2 class="dropdown-header">
+		                    Ledenadministratie
+		                </h2>
+		                <ul class="ul">
+		                    <li class="options" style="padding-top:17px;"><span class="fa fa-angle-right"></span> &nbsp; Rollen en retchen beheer</li>
+		                    <li class="options top-space-items"><span class="fa fa-angle-right"> </span> &nbsp; Kringen en wijken beheer</li>
+
+		                    <li class="options top-space-items"><span class="fa fa-angle-right"> </span> &nbsp; in/uit schrijven leden</li>
+		                </ul>
+		            </div>
+		            <div class="col-lg-3">
+		                <h2 class="dropdown-header">
+		                    Activiteiten
+		                </h2>
+		                <ul class="ul">
+		                    <li class="options" style="padding-top:17px;"><span class="fa fa-angle-right"></span> &nbsp; Activiteiten beheren</li>
+		                    <li class="options top-space-items"><span class="fa fa-angle-right"> </span> &nbsp; Email reminders</li>
+		                </ul>
+		            </div>
+		            <div class="col-lg-3">
+		                <h2 class="dropdown-header">
+		                    Pastoraat
+		                </h2>
+		                <ul class="ul">
+		                    <li class="options" style="padding-top:17px;"><span class="fa fa-angle-right"></span> &nbsp; Bezoek agenda beheren</li>
+		                    <li class="options top-space-items"><span class="fa fa-angle-right"> </span> &nbsp; Pastoraat beheren</li>
+		                </ul>
+		            </div>
+		            <div class="col-lg-3">
+		                <h2 class="dropdown-header">
+		                    Beheer
+		                </h2>
+		                <ul class="ul">
+		                    <li class="options" style="padding-top:17px;"><span class="fa fa-angle-right"></span> &nbsp;(Leeftijd)Nieuws beheren</li>
+		                    <li class="options top-space-items"><span class="fa fa-angle-right"> </span> &nbsp;(Leeftijd)Foto albums beheren</li>
+		                    <li class="options top-space-items"><span class="fa fa-angle-right"> </span> &nbsp;(Leeftijd)Agenda beheren</li>
+		                    <li class="options top-space-items"><span class="fa fa-angle-right"> </span> &nbsp;(Leeftijd)beheren</li>
+		                </ul>
+		            </div>
+				</div>
+				<!-- navigations ends -->
+				<div class="searchContainer">
+		            <div class="wrapper">
+		                <form>
+		                    <label class="prefix">
+		                    Zoeken:
+		                    </label>
+		                    <input type="text" class="input-search" placeholder="    Naam,dienst,prediker,lid etc." />
+		                    <img src="images/search.png" class="errspan img-responsive">
+		                </form>
+		            </div>
+		        </div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 zero-padding" style="width: 275px;margin-right: 10px;">
+							<div class="col-md-12 small-container grey-container">
+								<h2 class="container-heading dark-text">Prikbord</h2>
+								<p class="sub-heading dark-text">Meest recent</p>
+								<p class="content small-text">Wilt u er even tussen uit? En niet veel budget? Wij stellen ons vakantie huis ter beschik-king voor leden met een laag inkomen. Wilt u meer...</p>								
+							</div>
+							<div class="col-md-12 small-container" style="padding:0px 0px; margin-right: 20px;">
+			                    <div class="main">
+									<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+									  <div class="carousel-inner">
+										<div class="item active">
+											<div class="item1">
+											</div> 
+										</div>
+										<div class="item">
+											<div class="item2">
+											</div> 
+										</div>
+									  </div>
+									</div>
+			                    	<div class="img-bottom-bar">
+										<p class="title">KINDEREN</p>
+										<p class="description">Foto’s zondagschool</p>
+									</div>
+			                    </div>							
+				           	</div>
+						</div>
+						<div class="col-md-6 zero-padding" style="width: 571px;margin-left: 10px;margin-right: 10px;">
+							<div class="col-md-12 large-container red-container light-text">
+								<h2 class="container-heading">Uw activiteiten deze week [36]</h2>
+									<div class="row">
+										<div class="col-md-3 event-icon">
+											<img src="images/music.png" alt="" />
+										</div>
+										<div class="col-md-9 event-data">
+											<p class="event-heading">Oefenen met de kerk</p>
+											<p class="event-date">Dinsdag 16 juni 2015</p>
+											<p class="event-time">11.00 - 16.30- uur</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 event-icon" style="padding: 64px 0px 0px 48px;">
+											<img src="images/bible.png" alt="" />
+										</div>
+										<div class="col-md-9 event-data">
+											<p class="event-heading">Schriftlezing Matt. 25:15-23</p>
+											<p class="event-date">Woensdag 17 juni 2015</p>
+											<p class="event-time">11.00 - 16.30- uur</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-3 event-icon" style="padding: 68px 0px 0px 45px;">
+											<img src="images/diner.png" alt="" />
+										</div>
+										<div class="col-md-9 event-data">
+											<p class="event-heading">Mannen ontbijt</p>
+											<p class="event-date">Vrijdag 19 juni 2015</p>
+											<p class="event-time">11.00 - 16.30- uur</p>
+										</div>
+									</div>
+									
+									<button class="button button-light button-transition" type="submit">
+										Alle Activiteiten <span class="fa fa-angle-right arrow-setting pull-right"></span>
+									</button>
+								</div>
+							</div>
+						<div class="col-md-12 zero-padding" style="width: 275px;margin-left: 10px;">
+							<div class="col-md-3 col-sm-3 small-container grey-container" >
+								<h2 class="container-heading dark-text">Contact</h2>
+								<p class="sub-heading dark-text">Veragen of opmerkingen over het intranet?</p>
+								<p class="telephone" style="padding-top: 12px; margin-bottom: 0px;"><a href="tel:078 630 99 00">(078) 630 99 00</a></p>
+								<p class="email"><a href="mailto:info@dukandelaar.nl">info@dukandelaar.nl</a></p>
+								<ul class="list-inline">
+									<li>
+										<a href="#" class=""><span class="fa fa-facebook social-icon"></span></a>
+									</li>
+									<li>
+										<a href="#" class=""><span class="fa fa-twitter social-icon"></span></a>
+									</li>
+									<li>
+										<a href="#" class=""><span class="fa fa-linkedin social-icon"></span></a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-3 small-container" style="padding:0px 0px; margin-right: 20px;">
+								<div class="main1">
+			                    	<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+									  <div class="carousel-inner">
+										<div class="item active">
+											<div class="item1">
+											</div>
+										</div>
+										<div class="item"> 
+											<div class="item2">
+											</div>
+										</div>
+									  </div>
+									</div>
+			                    	<div class="img-bottom-bar">
+										<p class="title">KINDEREN</p>
+										<p class="description">Foto’s zondagschool</p>
+									</div>
+			                    </div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-6 zero-padding" style="width: 571px; margin-right: 10px;">
+							<div class="col-md-12 large-container grey-container">
+								<h2 class="container-heading dark-text">Tekst van de dag</h2>
+								<p class="sub-heading dark-text">Dinsdag 16 juni 2015</p>
+								<blockquote class="content blockquote">" U mag uw zorgen op Hem afwentelen, want u ligt Hem na aan het hart."</blockquote>
+								<cite>1 Petrus 5:7 (NBG)</cite>
+								<button class="button button-dark button-transition" type="submit" style="width: 295px; ">
+									LEES VERS OP DEGELIJKS WOORD <span class="fa fa-angle-right arrow-setting pull-right"></span>
+								</button>
+							</div>
+						</div>
+						<div class="col-md-6 zero-padding" style="width: 571px; margin-left: 10px;">
+							<div class="row" style="margin-left: 0px; margin-right: 0px;">
+								<div class="col-md-3 small-container" style="padding:0px 0px; margin-right: 20px;">
+									<div class="main2">
+				                    	<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+										  <div class="carousel-inner">
+											<div class="item active">
+												<div class="item1">
+												</div>
+											</div>
+											<div class="item"> 
+												<div class="item2">
+												</div>
+											</div>
+										  </div>
+										</div>
+										<div class="img-bottom-bar">
+											<p class="title">KINDEREN</p>
+											<p class="description">Foto’s zondagschool</p>
+										</div>
+				                    </div>
+								</div>
+								<div class="col-md-3 small-container grey-container">
+									<h2 class="container-heading dark-text" >Preek a.s zondag</h2>
+									<p class="sub-heading dark-text">met D.S Ramshroon</p>
+									<p class="content large-text dark-text">Heeft u de ander en uzelf lief ?</p>
+								</div>
+							</div>
+							<div class="row" style="margin-left: 0px;margin-right: 0px;">
+								<div class="col-md-12 zero-padding audio-player">
+									<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+									<div id="jp_container_1" class="jp-audio">
+										<h2 class="container-heading light-text">Preek van deze week</h2>
+										<p class="sub-heading light-text">Geloven is geen gevoel?!</p>
+										<p class="player-artist light-text">met D.S. Ramshoorn</p>
+										  <div class="text-center" style="width:100%;padding-top:40px;z-index:10;">
+											<div class="jp-time jp-left-time">
+												<span class="jp-current-time"></span>
+											</div>
+											<div style="float: left; width: 425px; padding-top: 9px">
+												<div class="jp-seek-bar">
+													<div class="jp-play-bar" style="background-color: #b2270d;  width: 0px;  height: 7px;"></div>
+												</div>
+											</div>				
+											<div class="jp-time">
+												<span class="jp-duration"></span>
+											</div>
+											
+											<div style="margin-top:42px; color: #b2270d" class="jp-controls">
+												<div class="col-lg-5">
+													<span class="play-rewind"></span>
+												</div>
+												<div class="col-lg-2">
+													<span style="cursor: pointer" id="playBtn" class="play-button jp-play"></span>
+													<span style="cursor: pointer" id="pauseBtn" class="pause-button jp-play"></span>
+												</div>
+												<div class="col-lg-5">
+													<span class="play-forward"></span>
+												</div>
+											</div>	
+										  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-6 zero-padding" style="width: 571px; margin-right: 20px;">
+							<div class="row" style="margin-left: 0px; margin-right: 0px;">
+								<div class="col-md-12 zero-padding small-container red-container" style="margin-right: 10px;">
+									<h2 class="container-heading light-text">Weekboodschap</h2>	
+									<p class="content light-grey-text">Welkom, handig om te ont- houden voor deze week. a.s. zondag is voedselinzameling voor Dorcas.</p>
+									<a href="">Bekijk hier de lijst.</a>
+								</div>
+								<div class="col-md-3 col-sm-3 zero-padding" style="background-color: #d7d9d9; height: 275px; width: 275px; margin-left: 10px; ">
+									<div class="main3">
+				                    	<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+										  <div class="carousel-inner">
+											<div class="item active">
+												<div class="item1">
+												</div>
+											</div>
+											<div class="item"> 
+												<div class="item2">
+												</div>
+											</div>
+										  </div>
+										</div>
+										<div class="img-bottom-bar">
+											<p class="title">KINDEREN</p>
+											<p class="description">Foto’s zondagschool</p>
+										</div>	
+				                    </div>
+								</div>
+							</div>
+							<div class="row" style="margin-left: 0px;margin-right: 0px;">
+								<div class="col-md-6 zero-padding" style="width: 571px;margin-right: 10px;">
+									<div class="col-md-12 large-container grey-container">			
+										<h2 class="container-heading dark-text">(Leeftijd)Nieuws</h2>
+										<div class="col-md-12">
+											<div class="col-md-4 news-image">
+												<img src="images/1.jpg" alt="">
+											</div>
+											<div class="col-md-8">
+												<p class="news-title dark-text">Mannen ontbijt</p>
+												<p class="news-date">7 juli 2015</p>
+												<p class="news-content">Oditio mod et et etur? Nostrum aute nosanis saperum quiantem inulluptam sit aut vent.Occus non eveles ipiendam quiati</p>
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="col-md-4 news-image">
+												<img src="images/3.jpg" alt="">
+											</div>
+											<div class="col-md-8">
+												<p class="news-title dark-text">Ballonnen in de lucht!</p>
+												<p class="news-date">16 Juni 2015</p>
+												<p class="news-content">Oditio mod et et etur? Nostrum aute nosanis saperum quiantem inulluptam sit aut vent.Occus non eveles ipiendam quiati</p>
+											</div>
+										</div>
+										<button class="button button-dark button-transition" type="submit" style="width: 203px; ">
+											NIEUWSOVERZICHT<span class="fa fa-angle-right arrow-setting pull-right"></span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 zero-padding" style="padding-left: 0px; padding-right: 0px;width: 571px;">
+							<div class="col-md-12 large-container grey-container">
+								<h2 class="container-heading dark-text">Er is er een jarig!</h2>
+								<p class="sub-heading dark-text">Dinsdag 16 juni 2015</p>
+								<table class="table table-condensed">
+									<tbody>
+										<tr class="table-row">
+											<td style="width: 288px;">Rene & Jennet de Zwart</td>
+											<td style="width: 202px;">15 jaar getrouwd</td>
+											<td><p class="iconChat"></p></td>
+										</tr>
+										<tr class="table-row">
+											<td>Henk Mennema</td>
+											<td>23 jaar</td>
+											<td><p class="iconChat"></p></td>
+										</tr>
+										<tr class="table-row">
+											<td>Marlies van de Heuvel</td>
+											<td>2 jaar</td>
+											<td><p class="iconChat"></p></td>
+										</tr>
+										<tr class="table-row">
+											<td>Machiel $ Jan Willem van de Herik</td>
+											<td>10 jaar getrouwd</td>
+											<td><p class="iconChat"></p></td>
+										</tr>
+										<tr class="table-row">
+											<td>Jan de Kruijt </td>
+											<td>13 jaar</td>
+											<td><p class="iconChat"></p></td>
+										</tr>
+										<tr class="table-row">
+											<td>Rene Zwart</td>
+											<td>15 jaar</td>
+											<td><p class="iconChat"></p></td>
+										</tr>
+										<tr class="table-row" style="border-bottom: none;">
+											<td>Henk Mennema</td>
+											<td>23 jaar</td>
+											<td><p class="iconChat"></p></td>
+										</tr>
+									</tbody>
+								</table>
+								<button class="button button-dark button-transition" type="submit" style="width: 201px; padding-left: 12px; ">
+									Alle Verjaardagen<span class="fa fa-angle-right arrow-setting pull-right"></span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer>
+					<div class="col-md-12 col-sm-12">
+						<div class="c-rights text-center">
+							2015 - Uw kerknaam - Realisatie door peer webdevelopment
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<!-- jQuery -->
+		<script src="js/jquery.js"></script>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+
+		<script type="text/javascript">
+
+        (function() {
+
+            var parent1 = $('#dropdown1-parent');
+            var parent2 = $('#dropdown2-parent');
+            var parent3 = $('#dropdown3-parent');
+            var parent4 = $('#dropdown4-parent');
+
+            var object = {
+
+                dropdown1: $('#dropdown1'),
+                dropdown2: $('#dropdown2'),
+                dropdown3: $('#dropdown3'),
+                dropdown4: $('#dropdown4'),
+
+               
+
+                dropdown1parent: function(e) {
+
+                    if (object.dropdown1.is(':hidden')) {
+                        e.preventDefault();
+                        object.dropdown1.show();
+                        parent1.addClass('bg');
+                        parent2.removeClass('bg');
+                        parent3.removeClass('bg');
+                        parent4.removeClass('bg');
+                        object.dropdown2.hide();
+                        object.dropdown3.hide();
+                        object.dropdown4.hide();
+                    } else {
+                        object.dropdown1.hide();
+                        parent1.removeClass('bg');
+                        parent2.removeClass('bg');
+                        parent3.removeClass('bg');
+                        parent4.removeClass('bg');
+
+                    }
+
+                },
+
+                dropdown2parent: function() {
+                    
+                    if (object.dropdown2.is(':hidden')) {
+                        object.dropdown2.show();
+                        parent2.addClass('bg');
+                        parent1.removeClass('bg');
+                        parent3.removeClass('bg');
+                        parent4.removeClass('bg');
+                        object.dropdown1.hide();
+                        object.dropdown3.hide();
+                        object.dropdown4.hide();
+                    } else {
+                        object.dropdown2.hide();
+                        parent1.removeClass('bg');
+                        parent2.removeClass('bg');
+                        parent3.removeClass('bg');
+                        parent4.removeClass('bg');
+                    }
+                },
+
+                dropdown3parent: function() {
+
+                    if (object.dropdown3.is(':hidden')) {
+                        object.dropdown3.show();
+                        parent3.addClass('bg');
+                        parent2.removeClass('bg');
+                        parent1.removeClass('bg');
+                        parent4.removeClass('bg');
+                        object.dropdown1.hide();
+                        object.dropdown2.hide();
+                        object.dropdown4.hide();
+                    } else {
+                        object.dropdown3.hide();
+                        parent1.removeClass('bg');
+                        parent2.removeClass('bg');
+                        parent3.removeClass('bg');
+                        parent4.removeClass('bg');
+                    }
+                },
+
+                dropdown4parent: function() {
+
+                    if (object.dropdown4.is(':hidden')) {
+                        object.dropdown4.show();
+                        parent4.addClass('bg');
+                        parent2.removeClass('bg');
+                        parent1.removeClass('bg');
+                        parent3.removeClass('bg');
+                        object.dropdown1.hide();
+                        object.dropdown2.hide();
+                        object.dropdown3.hide();
+                    } else {
+                        object.dropdown4.hide();
+                        parent1.removeClass('bg');
+                        parent2.removeClass('bg');
+                        parent3.removeClass('bg');
+                        parent4.removeClass('bg');
+                    }
+                }
+
+
+            };
+
+            parent1.on('click', object.dropdown1parent);
+            parent2.on('click', object.dropdown2parent);
+            parent3.on('click', object.dropdown3parent);
+            parent4.on('click', object.dropdown4parent);
+
+
+            var changeImage  = "images/closemenu.png";
+            var originalImage = "images/menu.png";
+
+
+            $('#menu-cross').on('click',function(){
+
+                if($(this).attr('data-changed') == 'true'){
+
+                    $(this).attr('src', originalImage).attr('data-changed', 'false');
+
+                }else{
+
+                    $(this).attr('src', changeImage).attr('data-changed', 'true');
+
+                }
+            });
+
+        })();
+
+    </script>
+		
+		<script type="text/javascript">
+			$('.carousel').carousel({
+				interval: 2500,
+				pause: 'none'
+			})
+
+			$('#myCarousel').on('slide', '', function () {
+				if ($('.carousel-inner .item:last').hasClass('active')) {
+					$(this).carousel('pause');
+				}
+			})
+		</script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				$("#jquery_jplayer_1").jPlayer({
+					ready: function () {
+						$(this).jPlayer("setMedia", {
+							m4a: "http://www.jplayer.org/audio/m4a/Miaow-08-Stirring-of-a-fool.m4a",
+						});
+					},
+					
+					supplied: "m4a",
+					wmode: "window",
+					globalVolume: true,
+					useStateClassSkin: true,
+					autoBlur: false,
+					smoothPlayBar: true,
+					keyEnabled: true
+				});
+
+			});
+			
+			
+			
+			$('.play-forward').click(function(){
+				var currentProgress = GetPlayerProgress();
+
+				var futureProgress = currentProgress + 5;
+				$("#jquery_jplayer_1").jPlayer("playHead", parseInt(futureProgress, 10));	 
+			});
+			
+			$('.play-rewind').click(function(){
+				var currentProgress = GetPlayerProgress();
+
+				var futureProgress = currentProgress - 5;
+				$("#jquery_jplayer_1").jPlayer("playHead", parseInt(futureProgress, 10));	 
+			});
+			
+			function GetPlayerProgress() {
+				return ($('.jp-play-bar').width() / $('.jp-seek-bar').width() * 100);
+			}
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,62 @@
+/*start section 6 styling*/
+.no-padding{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+/*end section 6 styling*/
+/*start section 7 styling*/
+.navbar-default{
+	background-color : transparent;
+}
+
+.breadcrumb{
+	background-color : transparent;
+	margin-bottom:0px;
+}
+/*end section 7 styling*/
+/*start section 8 styling*/
+.date{
+    margin:15px 0;
+    text-align: right;
+}
+/*end section 8 styling*/
+
+img{
+    width: 100%;   
+}
+
+@charset "utf-8";
+/* CSS Document */
+/*start section 2 styling*/
+.title-size
+{
+	font-size:20px;
+	font-weight:bold;
+}
+/*end section 2 styling*/
+/*start throughout*/
+.btn-lg
+{
+	padding-left:0px;
+}
+/*end throughout*/
+/*start "keep in touch" section styling*/
+
+.kit-lh
+{
+	line-height:10px;
+}
+
+/*end "keep in touch" section styling*/
+
+h2
+{
+	margin-top:5px;
+}
+
+.map
+{
+	width:100%;
+	frameborder:0;
+	margin-top:20px;
+}

@@ -1,0 +1,209 @@
+<html>
+<head>  
+
+<script type="text/javascript">
+<title>Students Portal</title>s
+var marksOb = 0;
+var marksT = 100;
+
+		var sub = "";
+		var crHours = 3;
+		var grade = "";
+		var percent = 0;
+	function addNumbers1()
+		{
+				sub = document.getElementById("aa").value;
+				crHours = document.getElementById("bb").value;
+				marksOb = document.getElementById("dd").value;
+				marksT = document.getElementById("cc").value;
+				
+				if(marksOb>=90)
+				{
+					
+					percent = (marksOb/marksT)*100;
+					document.getElementById("ee").value = percent;
+					document.getElementById("ff").value = "A";	
+				}
+				
+				else if(marksOb>=80 && marksOb <90)
+				{
+						percent = (marksOb/marksT)*100;
+					document.getElementById("ee").value = percent;
+					
+					document.getElementById("ff").value = "B";	
+				}
+				else if(marksOb>=70 && marksOb <80)
+				{
+					percent = (marksOb/marksT)*100;
+					document.getElementById("ee").value = percent;
+					
+					document.getElementById("ff").value = "C";	
+				}
+				else if(marksOb>=60 && marksOb <70)
+				{
+						percent = (marksOb/marksT)*100;
+					document.getElementById("ee").value = percent;
+					
+					document.getElementById("ff").value = "D";	
+				}
+				else if(marksOb>=0 && marksOb <60)
+				{
+					percent = (marksOb/marksT)*100;
+					document.getElementById("ee").value = percent;
+					
+					document.getElementById("ff").value = "F";	
+				}
+			
+		}
+	function addNumbers2()
+	{
+
+
+var v1 = parseInt(document.getElementById("dd").value);
+	var v2 = parseInt(document.getElementById("cc").value);
+	var ansD = document.getElementById("ee");
+	ansD.value = v2/v1*100;
+
+
+}	
+	
+	
+	function myFunction() 
+	{
+    document.getElementById("a").innerHTML = "4";
+	document.getElementById("a").innerHTML = "";
+	  document.getElementById("b").innerHTML = "<select><option>---</option><option>1</option><option>2</option><option>3</option></select>";
+	  document.getElementById("c").innerHTML = "<input type='text'>";
+	  document.getElementById("d").innerHTML = "<input type='text'>";
+	  document.getElementById("e").innerHTML = "<input type='text'>";
+	  document.getElementById("f").innerHTML = "<input type='text'>";
+	  
+	  
+}
+</script>
+<style>
+body {
+    background-color: #b0c4de;
+	 background-image: url("");
+	 background-repeat: repeat-x;
+}
+body {
+    background-image: url("v2.gpg");
+}
+</style>
+
+
+</head>
+<body>
+<p><h2 style="font-family: 'Times New Roman', serif"> JavaScript </h2></p>
+<p> &nbsp; </p>
+<form>
+<div style="float:left">
+
+<table>
+<tr>
+<td style="font-weight:bold">Name:</td>
+<td><input name="entername" type ="text" placeholder="Enter your Name:" required ></td>
+<td style="font-weight:bold"> ID :</td>
+<td> <input type="text" placeholder="Enter your ID" required ></td>
+</tr>
+
+</tr>
+<tr>
+<td style="font-weight:bold">Subject </td>
+<td style="font-weight:bold">Credit hours:</td>
+<td style="font-weight:bold">Total Marks</td>
+<td style="font-weight:bold">&nbsp;Obtained Marks</td>
+<td style="font-weight:bold">Percentage %</td>
+<td style="font-weight:bold">Grade</td>
+</tr>
+<tr>
+<td>1</td>
+<td> <select name ="select" id ="select">
+	<option>---</option>
+	<option>1</option>
+	<option>2</option>
+    <option>3 </option>
+	<option>4 </option>
+	<option>5</option>
+	<option>6</option>
+    </select>
+	</td>
+<td> <input type="text" id="tm" name="cr1"/></td>
+<td> <input type="text" id="om" name="cr2"/></td>
+<td> <input type="text" id="p1" onclick="calAvrg()" name="cr3"/></td>
+<td> <input type="text" id="value1" name="cr3"/></td>
+</tr>
+<tr>
+<td>2</td>
+<td> <select name ="select" id ="select">
+	<option>---</option>
+	<option>1</option>
+	<option>2</option>
+    <option>3 </option>
+	<option>4 </option>
+	<option>5</option>
+	<option>6</option>
+    </select>
+	</td>
+<td> <input type="text" id="tm1" name="cr1"/></td>
+<td> <input type="text" id="om1" name="cr2"/></td>
+<td> <input type="text" id="p2" onclick="calAvrg1()" name="cr3"/>
+<td> <input type="text" id="value2" name="cr3"/></td>
+</tr>
+<tr>
+<td>3</td>
+<td> <select name ="select" id ="select">
+	<option>---</option>
+	<option>1</option>
+	<option>2</option>
+    <option>3 </option>
+	<option>4 </option>
+	<option>5</option>
+    <option>6</option>
+	</select>
+	</td>
+<td> <input type="text" id="tm2" name="cr1"/></td>
+<td> <input type="text" id="om2" name="cr2"/></td>
+<td> <input type="text" id="p3" onclick="calAvrg2()" name="cr3"/>
+<td> <input type="text" id="value3" name="cr3"/></td>
+</tr>
+<tr> 
+<td id="a">&nbsp;  </td>
+<td id="b">&nbsp;  </td>
+<td id="c">&nbsp;  </td>
+<td id="d">&nbsp;  </td>
+<td id="e">&nbsp;  </td>
+<td id="f">&nbsp;  </td>
+
+</tr>
+<tr> 
+<td id="aa">&nbsp;  </td>
+<td id="bb">&nbsp;  </td>
+<td id="cc">&nbsp; </td>
+<td id="dd">&nbsp; </td>
+<td id="ee">&nbsp;  </td>
+<td id="ff">&nbsp;  </td>
+
+</tr>
+<tr>
+<td height="48"><input style="height:30px;font-weight:bolder" type="button" value="Show More" onClick="myFunction()" /> </td>
+<td height="33"><input style="height:30px;font-weight:bolder" type="submit" value="Submit" onClick="message2()" /> </td>
+<td><input style="height:30px;font-weight:bolder" type="button" value="Calculate GPA" onClick="addNumbers1()" /></td>
+<td><input style="height:30px;font-weight:bolder" type="button" value="Calculate Average" onClick="addNumbers2()" /></td>
+</tr>
+</table>
+</left>
+</div>
+<div style="center">
+<table>
+<tr>
+<td>&nbsp; </td>
+</tr>
+<tr><td>&nbsp; </td> </tr>
+
+</table>
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,93 @@
+.titleStyle
+{
+	font-size: 27px;
+	color: #262626;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.boldText
+{
+	font-size: 36px;
+	color: #2b2b2b;
+	text-transform: uppercase;
+	line-height: 36px;
+}
+
+.blueText
+{
+	color: #23bcf5;
+}
+
+.blueText2
+{
+	color: #23bcf5;
+	font-size: 36px;
+	text-transform: uppercase;
+	line-height: 36px;
+}
+
+.whiteText
+{
+	color: #ffffff;
+}
+
+.greyText
+{
+	font-size: 36px;
+	color: #a0a0a0;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.boldTitle
+{
+	font-weight: bold;
+	font-size: 36px;
+	color: #2b2b2b;
+	text-transform: uppercase;
+}
+
+.smallBold
+{
+	font-weight: bold;
+}
+
+.blogMainHeading
+{
+	font-size: 36px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #a0a0a0;
+}
+
+.contHeading
+{
+	color: #fff;
+	font-size: 60px;
+}
+
+.greyParagraphText
+{
+	font-size: 18px;
+	color: #c5c5c5;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	text-transform: none;
+}
+
+.blogTitle
+{
+	font-size: 27px;
+	color: #262626;
+	text-transform: uppercase;
+}
+
+.whiteText
+{
+	color: #fff;
+}
+
+
+
+

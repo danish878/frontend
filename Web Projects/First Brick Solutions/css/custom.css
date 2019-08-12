@@ -1,0 +1,796 @@
+*
+{
+	margin: 0 auto;
+	padding: 0px;
+}
+
+body
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	margin:0;
+	padding:0;
+	color:#000;
+}
+
+.logo
+{
+	width: 124px;
+	height: 95px;
+	margin-top: 20px;
+}
+
+.nav-right
+{
+	float: right;
+	padding: 0px;
+	font-size: 17px;
+}
+
+.toggle-2
+{
+	margin-top: 30px;
+	margin-right: 30px;
+}
+
+.navbar-margin
+{
+    margin-top: 40px;
+}
+
+.navbar-fixed-top
+{
+	min-height: 127px;
+	background-color: #fff;
+}
+
+.navbar-nav
+{
+    margin: 7.5px 0px;
+}
+
+.navbar-nav li a
+{
+	color: #500675;
+	margin: 10px 15px;
+	padding: 5px 0;
+	border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-nav li a:hover, .navbar-nav li a.active, .navbar-nav li a:focus
+{
+	color: red;
+    background-color: transparent;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+}
+
+.fa-bars
+{
+	color: #500675;
+}
+
+.navbar-nav li ul
+{
+    position: absolute;
+    display: none;
+    width: 220px;
+    background-color: #eee;
+    text-align: left;
+    list-style: none;
+}
+
+.navbar-nav li:hover ul
+{
+	display: block;
+}
+
+.navbar-nav li ul li a
+{
+	text-decoration: none;
+    display: block;
+}
+
+
+
+/*Slider Section Styling Starts Here*/
+
+.carousel
+{
+	margin-top: 127px;
+}
+
+.slider-bottom
+{
+	background-color: red;
+	font-family: 'Lato','sans-serif';
+	color: #fff;
+	padding: 25px 0;
+	font-size: 22px;
+}
+
+.slider-bottom button
+{
+	padding: 5px 20px 9px;
+	border:2px solid #fff;
+	border-radius: 5px;
+	color: #fff;
+	text-decoration: none;
+	margin-top: 0px;
+}
+
+.slider-bottom button:hover
+{
+	background-color: #500675;
+	transition: all .5s linear 0s;
+}
+
+/*Slider Section Styling Starts Here*/
+
+.faicons
+{
+	width: 130px;
+	height: 130px;
+	color: #fff;
+	background-color: #500675;
+	font-size: 35px;
+	border-radius: 50%;
+	line-height: 110px;
+	border: 10px solid #fff;
+	transition: all 0.3s ease 0s;
+}
+
+.faicons:hover
+{
+	background-color: red;
+}
+
+.services, .latest-work, .application-development, .our-team, .contact-us
+{
+	padding: 80px 0;
+}
+
+.heading
+{
+	color: #500675;
+	font-size: 30px;
+	font-family: 'Lato','sans-serif';
+	text-transform: uppercase;
+}
+
+.heading-bottom-border
+{
+	width: 85px;
+    border: 1px solid #500675;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.icon-position
+{
+	position: relative;
+}
+
+.title
+{
+	font-size: 25px;
+	color: red;
+	font-family: 'Lato','sans-serif';
+	padding-top: 70px;
+}
+
+.services-description
+{
+	min-height: 300px;
+	background-color: #eee;     /*CFC1DD;*/
+	border-radius: 20px;
+	margin-top: -50px;
+}
+
+.services-item-box:hover > .icon-position > .faicons
+{
+	background-color: red;
+}
+
+.text-padding
+{
+	padding: 15px;
+}
+
+.link-text
+{
+	padding-bottom: 30px;
+}
+
+.link-text a
+{
+	font-size: 16px;
+	text-decoration: none;
+	color: #500675;
+	font-family: 'Lato','sans-serif';
+}
+
+.link-text a:hover
+{
+	color: red;
+}
+
+							/*Latest Work Section Styling Starts here*/
+
+.latest-work
+{
+	width: 100%;
+	min-height: 520px;
+	background-color: #eee;
+}
+
+#myCarousel
+{
+	margin-top: 50px;
+}
+
+#myCarousel .carousel-indicators .active
+{
+    background-color: #500675;
+}
+
+#myCarousel .carousel-indicators li
+{
+    border: 1px solid #500675;
+}
+
+#myCarousel ul
+{
+	margin-top: 100px;
+}
+
+#myCarousel img
+{
+	margin-bottom: 20px;
+}
+
+#myCarousel .carousel-indicators
+{
+	bottom: 0px;
+	margin-top: 20px;
+}
+
+#myCarousel .row
+{
+    margin: 0 0 50px 0;
+    padding: 0 0px 20px;
+}
+
+							/*Latest Work Section Styling Ends here*/
+							
+							/*Applications Development Section Styling Ends here*/
+							
+.application-development .title
+{
+	padding-top: 0px;
+}
+
+.application-development img
+{
+    padding-top: 40px;
+}
+							
+							/*Applications Development Section Styling Ends here*/
+							
+							/*Our Team Section Styling Ends here*/
+
+.our-team .title, .our-services .title
+{
+	padding-top: 0px;
+}							
+.our-team
+{
+	height: 100%;
+	background-color: #eee;
+}
+
+.img-circle
+{
+	width: 150px;
+	height: 150px;
+	margin-bottom: 30px;
+}
+							
+							/*Our Team Section Styling Ends here*/
+							
+							/*Our Services Section Styling Starts here*/
+							
+.text-left p a
+{
+	color: red;
+	text-decoration: none;
+}
+
+.text-left p a:hover
+{
+	color: #500675;
+	font-weight: bold;
+}
+							
+							/*Our Services Section Styling Ends here*/
+
+.footer
+{
+	min-height: 80px;
+	background-color: #500675;
+	color: #fff;
+	font-size: 15px;
+	padding: 29px 0;
+}
+
+							/*Our Portfolio Section Styling Starts here*/
+
+/*          MixItUp CSS             */
+
+#Container .mix
+{
+	display: none;
+}
+
+.controls
+{
+	padding: 0 0 20px 0;
+	color: #500675;
+}
+
+button
+{
+  display: inline-block;
+  padding: 6px 12px;
+  border: 2px solid #500675;
+  font-size: 16px;
+  font-weight: 300;
+  background-color:transparent;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button.active
+{
+  color: red;
+}
+
+button:focus{
+  outline: 0 none;
+}
+
+button + label{
+  margin-left: 1em;
+}
+
+.filter
+{
+	text-transform:uppercase;
+	font-weight:bold;
+}
+.container .mix{
+  text-align: left;
+  display: none;
+}
+
+#myCarousel .row
+{
+	margin:0 0 50px 0;
+	padding: 0 100px 50px;
+}
+
+.overlay
+{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    -webkit-transition:all 0.5s ease;
+    transition:all 0.5s ease;
+    opacity: 0;
+    filter:alpha(opacity=0);
+}
+
+.overlay:hover
+{
+   opacity: 1;
+   filter:alpha(opacity=100);
+}
+
+.overlay2
+{
+    -webkit-transition:all 0.5s ease;
+            transition:all 0.5s ease;
+}
+
+.overlay2:hover
+{
+   opacity: 0.5;
+   filter:alpha(opacity=50);
+}
+
+.border
+{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    border:5px solid transparent;
+}
+
+.i-t
+{
+	color:#FFF;
+	font-family: 'Lato','sans-serif';
+	font-size:25px;
+	margin-top:65px;
+	text-align:center;
+}
+
+.i-des
+{
+	color:#FFF;
+	text-align:center;
+}
+
+.i-des > img.img-responsive, .img-center > img.img-responsive
+{
+	display:inline-block;
+}
+
+@media (max-width:700px) and (min-width:550px)
+{
+	.i-t
+	{
+		font-size:20px;
+		margin-top:100px;
+	}
+}
+
+@media (max-width:550px) and (min-width:400px)
+{
+	.i-t
+	{
+		font-size:20px;
+		margin-top:70px;
+	}
+}
+
+@media (max-width:400px) and (min-width:299px)
+{
+	.i-t
+	{
+		font-size:20px;
+		margin-top:40px;
+	}
+}
+
+.btn-more
+{
+	font-family: 'Lato','sans-serif';
+	font-size:20px;
+	margin:70px 0 0;
+	text-transform:uppercase;
+	border:2px solid #500675;
+	padding:10px 155px;
+	color: #500675;
+	border-radius: 0px;
+}
+
+.btn-more:hover
+{
+	border:2px solid red;
+	color: red;
+}
+
+@media (max-width:1200px) and (min-width:430px)
+{
+	.btn-more
+	{
+		padding:10px 120px;
+	}
+}
+
+@media (max-width:430px) and (min-width:299px)
+{
+	.btn-more
+	{
+		padding:10px 90px;
+		margin:30px 0;
+	}
+}
+
+@media (max-width:767px) and (min-width:299px)
+{
+	#myCarousel .row
+	{
+  		margin: 0 0 50px 0;
+  		padding: 0 15px 50px;
+  	}
+  	#myCarousel .row .col-lg-4, #myCarousel .row .col-md-4, #myCarousel .row .col-sm-4, #myCarousel .row .col-xs-12
+  	{
+  		padding:0px;
+  	}
+}
+
+							/*Our Portfolio Section Styling Ends here*/
+							
+							/*Contact us Section Styling Starts here*/
+							
+.zero-padding
+{
+	padding: 0px;
+}
+
+.contact-us .title
+{
+	padding: 0px;
+}
+
+.info-link a
+{
+	color: #500675;
+	text-decoration: none;
+}
+
+.info-link a:hover
+{
+	color: red;
+}
+
+.red-asterik
+{
+	color: red;
+}
+
+label
+{
+	vertical-align: top;
+	color: #500675;
+}
+
+.form-group input
+{
+	width: 100%;
+	background-color: #fcfcfc;
+	border: 2px solid #500675;
+	height: 35px;
+	border-radius: 5px;
+	font-size: 15px;
+	padding: 0 8px;
+}
+
+.form-group textarea
+{
+	width: 100%;
+	background-color: #fcfcfc;
+	border: 2px solid #500675;
+	border-radius: 5px;
+	padding: 6px 8px;
+}
+
+.submit-btn
+{
+	color: #500675;
+}
+
+.submit-btn:hover
+{
+	color: #fff;
+	background-color: red;
+	border: 2px solid red;
+}
+
+.left-padding
+{
+	padding-left: 0px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus
+{
+	outline: none;
+	border: 2px solid red;
+}
+
+iframe
+{
+	 width: 100%;
+	 height: 450px;
+	 margin-top: 127px;
+}
+
+							/*Contact us Section Styling Ends here*/
+							
+							/*About us Section Styling Starts here*/
+
+.breadcrumb
+{
+	margin: 160px 0 0 0;
+	background-color: transparent;
+	border-bottom: 1px solid #ddd;
+	border-radius: 0px;
+}
+
+.breadcrumb .fa-angle-right
+{
+	font-size: 17px;
+	position: relative;
+	top: 1px;
+	padding: 0 15px;
+	color: #500675;
+}
+
+.breadcrumb>.active
+{
+    color: red;
+}
+
+.breadcrumb li a
+{
+	color: #500675;
+	text-decoration: none;
+}
+
+.breadcrumb li a:hover
+{
+	color: red;
+}
+
+.about-us, .our-services, .our-portfolio, .web-design, .web-app, .software-development, .seo-services, .web-hosting
+{
+	padding: 50px 0 80px 0;
+}
+							
+							/*About us Section Styling Ends here*/
+							
+							/*Web Design Section Styling Starts here*/
+							
+.web-design .title, .software-development .title, .seo-services .title
+{
+	padding-top: 0px;
+}
+
+.services-list li
+{
+	list-style: none;
+	line-height: 2;
+}
+							
+							/*Web Design Section Styling Ends here*/
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+
+
+
+@media (max-width:767px) and (min-width:220px)
+{
+	.logo
+	{
+		padding-left: 15px;
+	}
+	.nav-right
+	{
+		float: none;
+	}
+	.navbar-margin
+	{
+	    margin-top: 0px;
+	}
+	.application-development img
+	{
+		padding: 30px 0;
+	}
+	.navbar-nav li a
+	{
+	    margin: 10px 0px;
+	}
+	.navbar-fixed-top .container
+	{
+		padding: 0px;
+	}
+	.t-space
+	{
+		margin-top: 30px;
+	}
+}
+
+@media (max-width:700px) and (min-width:220px)
+{
+	.services .col-xs-4
+	{
+		width: 100%;
+	}
+}
+
+@media (max-width:450px) and (min-width:220px)
+{
+	.contact-form .col-xs-6
+	{
+		width: 100%;
+	}
+}
+
+

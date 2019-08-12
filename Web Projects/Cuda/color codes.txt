@@ -1,0 +1,19 @@
+header background = #87509c
+work with us button = #eb7d4b
+
+
+Services we provide background = #87509c
+Services we provide line = #14a58c
+
+background = #e7f1f8
+heading #3c4761
+line #c8d9e5
+circles = #878787
+#27283d
+ceo #30bae7
+#5d677b
+social icon circle background = #bdd1df
+
+
+portfolio tabs = #ebc985
+load more projects button = #17c2a4

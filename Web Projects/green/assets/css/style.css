@@ -1,0 +1,29 @@
+.fa_font{
+	font-size: 20px;
+	margin-top: 10px;
+	color: #1C202B !important;
+	
+}
+::-webkit-input-placeholder {
+    color:    #999 !important;
+}
+:-moz-placeholder {
+    color:    #999 !important;
+}
+::-moz-placeholder {
+    color:    # 999 !important;
+}
+:-ms-input-placeholder {
+    color:    #999 !important;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #eee;
+}
+.nav.nav-tabs+.tab-content {
+    background: #fff;
+    margin-bottom: 30px;
+/*     padding: 10px; */
+	height:100%;
+	min-height:450px;

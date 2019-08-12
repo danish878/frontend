@@ -1,0 +1,242 @@
+@import url(https://fonts.googleapis.com/css?family=Gafata);
+
+* {
+	margin:0;
+	padding:0;
+}
+
+html, body { 
+	height:100%;
+}
+
+.loadIframe {
+	position:fixed;
+	left:-9999px;
+	bottom:0;
+}
+
+.uploadRectangle {
+	position:absolute;
+	z-index:999;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	
+	opacity:0;
+	filter:alpha(opacity=0);
+	
+	cursor:url("../../img/new/pointer.png"),auto;
+}
+
+.uploadRectangle input {
+	padding:0 !important;
+	margin:0 !important;
+	border:0 !important;
+	
+	cursor:url("../../img/new/pointer.png"),auto;
+}
+
+.region {
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+}
+
+.noImageFound {
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	
+	background:white url("../../img/noimage.gif") no-repeat 5px 5px;
+	border:1px solid #ccc;
+}
+
+#contextMenu {
+    position: fixed;
+    z-index:1000;
+    
+
+    background:#ffffff !important;
+    font-family: 'Gafata', sans-serif;
+    font-size: 14px;
+    line-height:20px;
+    
+    border: 3px solid #ffffff;
+    list-style: none;
+}
+
+#contextMenu li {
+	-webkit-transition:background 0.3s ease-in;  
+   	-moz-transition:background 0.3s ease-in;  
+   	-o-transition:background 0.3s ease-in;  
+   	transition:background 0.3s ease-in;  
+   	
+   	-webkit-transition:border 0.3s ease-in;  
+   	-moz-transition:border 0.3s ease-in;  
+   	-o-transition:border 0.3s ease-in;  
+   	transition:border 0.3s ease-in; 
+	
+	padding: 7px 11px;
+	border: 1px solid #ffffff;
+}
+
+#contextMenu li:hover {
+	border:1px solid #81204c;
+	background:#f5f5f5;
+}
+
+#contextMenu li a {
+	color: #434444;
+    text-decoration: none;
+}
+
+#contextMenu li a:hover {
+	color: #434444;
+}
+.scrollContainer {
+	position:absolute;
+	
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+.scrollContainer .scrollContentContainer {
+	position: absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	
+	overflow:hidden;
+}
+
+.scrollContainer .scrollContentContainer .scrollContent {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+.scrollContainer .scrollBar {
+	position: absolute;
+	top:0;
+	bottom:0;
+	
+	right:-26px;
+	width:22px;
+	
+	background:#ffffff;
+}
+
+.scrollContainer .scrollBar .scrollBarSlider {
+	position: absolute;
+	top:0;
+	left:6px;
+	right:6px;
+	
+	background:#666666;
+	
+	height:20px;
+	min-height:15%;
+	
+	cursor:url("../../img/new/pointer.png"),auto;
+}
+
+#systemOverlay {
+    position:fixed;
+    z-index:999;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+    background:url("../../img/overlay.png");
+}
+
+#systemPopup {
+    position: fixed;
+    z-index:1000;
+    top:20px;
+    bottom:20px;
+
+    width:900px;
+
+    left:50%;
+    margin-left:-450px;
+
+    background:#FFFFFF;
+	
+	overflow:hidden;
+	
+	font-family: 'Gafata', sans-serif;
+}
+
+#systemPopup .top {
+	position:relative;
+	
+	font-family: 'Gafata', sans-serif;
+	height:38px;
+	line-height:38px;
+	font-size:18px;
+
+	background:#F5F5F5;
+	color:black;
+	
+	border-bottom:1px solid #DDDDDD;	
+
+	padding:0px 12px;
+}
+
+#systemPopup a.exit {
+	position:absolute;
+	right:6px;
+	top:50%;
+	margin-top:-13px;
+	
+	height:26px;
+	width:26px;
+	
+	
+	background-color:white;
+	background-image:url("../../img/new/close.png");
+	background-repeat: no-repeat;
+	background-position: 5px 2px;
+
+}
+
+
+#systemPopup a.exit:hover {
+	text-decoration: none;
+	
+	background-color:white;
+	background-image:url("../../img/new/closehover.png");
+	background-repeat: no-repeat;
+	background-position: 5px 2px;
+	
+}
+
+#systemPopup .contentHolder {
+	position:absolute;
+	top:0px;
+	margin-top:39px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+}
+
+#systemPopup iframe {
+	display:block;
+	height:100%;
+}
+
+#systemPopup .line {
+	display:none;
+}
+
+

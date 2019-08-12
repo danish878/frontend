@@ -1,0 +1,10 @@
+RewriteEngine On
+
+RewriteBase /inition/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.php [L]
+
+<files structure.json>
+order allow,deny
+deny from all
+</files>

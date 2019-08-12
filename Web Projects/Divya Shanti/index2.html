@@ -1,0 +1,106 @@
+<div id="main">
+	<?php $imgUrl=$activePage->_getField("headerImage")->_getValue(); ?>
+	<div class="breadcrumb-section" style="background: url(<?php echo baseUrl.$imgUrl['img'] ; ?>) center 37.3% no-repeat;">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>
+						<?php 
+							if (is_object($activePage)) { echo htmlentities($activePage->_getField("title")->_getValue()); } 
+						?>
+					</h1>
+				<?php
+					$activeArray = url::getInstance()->_getActiveArray();
+					$showBreadcrumbs = count($activeArray) > 1;
+					if ($showBreadcrumbs) {
+						?>
+							<ul class="breadcrumb">
+								<?php		
+									foreach ($activeArray as $breadcrumbPage) {
+										$classes = array();
+										$classes[] = "active";
+										?>
+											<li <?php if ($activePage === $breadcrumbPage) { echo "class='active'"; } ?>>
+												<a href="<?php echo createUrl($breadcrumbPage); ?>">
+													<?php echo $breadcrumbPage->title; ?>
+												</a>
+											</li>
+										<?php	
+									}
+								?>		
+							</ul>
+						<?php
+					}
+				?>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cause-page" id="page-info">
+		<div class="container anim-section">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="row article-list-large progressbar">
+						<div class="col-xs-12 anim-section">
+							<div class="text-center section-header">
+								<?php echo $activePage->_getField("itemTitle")->_getValue(); ?>	
+							</div>
+							<figure class="article-pic">
+								<?php $imgUrl = $activePage->_getField("itemImage")->_render(); ?>
+							</figure>
+							<?php 										
+								$collectedDonation = $activePage->_getField("itemCollectedDonation")->_getValue();
+								$requiredDonation = $activePage->_getField("itemRequiredDonation")->_getValue();
+							?>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="<?php $result = ($collectedDonation/$requiredDonation)*100; echo $result;?>" aria-valuemin="0" aria-valuemax="100">
+									<span class="progress-value"><?php echo round($result);?>%</span>
+								</div>
+							</div>
+							<div class="detail-description">
+								<?php $activePage->_getField("itemDescription")->_render(); ?>
+								<a data-toggle="modal" href="<?php echo $activePage->_getField("itemDonateUrl")->_getValue(); ?>" data-target=".donate-form" class="btn btn-default">DONATE NOW</a>
+							</div>
+							<div class="step-donation">
+								<header class="donate-easy-steps section-header">
+									<?php  $activePage->_getField("stepSectionTitle")->_render(); ?>	
+								</header>
+								<div class="text-center">
+									<?php 
+										$itemList = $activePage->_getFieldByPath("step");
+										$itemIds = $activePage->_getFieldByPath("step")->_getIds(); 
+										$activeItem = false;
+										foreach($itemIds as $i => $itemId){
+											$item = $itemList->_getFieldByPath($itemId);
+												if($fullPageUrl === createUrl($database , $activePage , $item)){
+													$activeItem = $item;
+													break;
+												}
+										}
+										if($activeItem === false){
+											foreach($itemIds as $i => $itemId){
+											$item = $itemList->_getFieldByPath($itemId);
+											$title = $item->_getField("title")->_getValue();
+											$stepNumber = $item->_getField("stepNumber")->_getValue();
+											$description = $item->_getField("description")->_getValue();
+												?>
+													<div class="col-xs-12 col-sm-4 anim-section">
+														<div class="sec-step-desc">
+															<span class="number-count"><?php echo $stepNumber ; ?></span>
+															<h4 class="normal-text"><?php echo $title; ?></h4>
+															<?php echo $description; ?>
+														</div>
+													</div>
+												<?php
+											}
+										}	
+									?>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
